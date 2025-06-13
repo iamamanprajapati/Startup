@@ -1,5 +1,20 @@
 # Startup
 
+Software solutiuon
+
+<img width="1008" alt="image" src="https://github.com/user-attachments/assets/c5efe9fa-26db-4f9e-b844-a4d161830586" />
+
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/927e68d4-0650-45f5-8a84-733319b3126a" />
+
+<img width="824" alt="image" src="https://github.com/user-attachments/assets/99df5161-4e63-4492-b4bc-c8935e008fcf" />
+
+
+
+
+
+Media Solution
+
+
 1. Header
 <img width="1512" alt="image" src="https://github.com/user-attachments/assets/9f12ac17-fe6c-4f18-959e-f80bd7799b74" />
 
