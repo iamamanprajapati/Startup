@@ -12,3 +12,7 @@
   --color-secondary: #1e2938;
   --color-button:#f44900;
 }
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* outline with white color */
+}

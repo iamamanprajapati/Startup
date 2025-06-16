@@ -37,8 +37,8 @@ const Navbar = () => {
     }, []);
 
   return (
-    <div className='w-full bg-primary'>
-    <div className={`max-w-7xl mx-auto  py-3 sm:py-7 px-6  z-50 bg-primary transition-transform duration-500  ${isSticky ? 'fixed top-0 ' : 'relative'}  ${hideNavbar ? '-translate-y-full' : 'translate-y-0'}`} >
+    <div className={`w-full bg-primary fixed top-0 left-0 right-0 z-50 transition-transform duration-500  ${isSticky ? 'fixed top-0 border-b-[1px] border-white/30 ' : 'relative'}  ${hideNavbar ? '-translate-y-full' : 'translate-y-0'}`}>
+    <div className={`max-w-7xl mx-auto  py-3 sm:py-7 px-6  `} >
         <div className='flex justify-between items-center'>
             <div>
                 <span className='text-2xl md:text-3xl font-semibold cursor-pointer text-white'>Logo</span>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 {
                     NavbarMenu.map((menu,index)=>(
                     <li key={menu.id} className={`relative group cursor-pointer
-                        ${NavbarMenu.length-1 === index && "bg-button px-4 py-1.5 rounded-md text-white " }
+                        ${NavbarMenu.length-1 === index && "bg-button hover:bg-button/90 transition-all hover:-translate-y-1 duration-300 px-4 py-1.5 rounded-md text-white capitalize" }
                     `}>
                         <a href="#">{menu.menuItem}</a>
                         <span className={` ${NavbarMenu.length-1 !== index ?  'absolute left-0 bottom-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full ' : ''}`}></span>
@@ -69,10 +69,11 @@ const Navbar = () => {
     </div>
     {
   <div
-    className={` md:hidden
-      transition-all duration-500 overflow-hidden bg-secondary 
-      ${showMenu ? 'max-h-[600px] opacity-100 py-6' : 'max-h-0 opacity-0 py-0'}
-    `}
+     className={`
+    fixed mx-6 rounded-lg top-16 left-0 right-0 z-50 bg-secondary md:hidden transition-all duration-500 overflow-hidden
+    ${showMenu ? 'max-h-[600px] opacity-100 py-6' : 'max-h-0 opacity-0 py-0'}
+  `}
+    
   >
     <ul className="flex font-sm flex-col items-center gap-6 lg:gap-10 text-white px-6">
       {NavbarMenu.map((menu, index) => (

@@ -1,0 +1,58 @@
+import React from 'react'
+import Design from "../assets/Design.png"
+import home_banner from "../assets/banner_home01.jpg"
+import { motion} from "framer-motion";
+
+const Header = () => {
+
+  return (
+    <div className='w-full  bg-primary'>
+    <div className='relative max-w-7xl mx-auto  py-3 sm:py-7 px-6 text-white flex flex-col md:flex-row gap-8 justify-between md:items-center'>
+        <h1 className='z-10 uppercase text-4xl sm:text-7xl leading-12 sm:leading-18 md:text-[100px] lg:text-[125px] font-bold md:leading-30'>
+            best 
+            <br/>
+            <span className='outline-text'>website</span> 
+            <br/>
+            development
+            <br/>
+            <span className='outline-text'>& Content</span>
+            <br/>
+            Creation
+            
+        </h1>
+        <div className='flex md:absolute  right-0 z-1'>
+            <img src={Design} alt="Design image" />
+        </div>
+
+    </div>
+
+    <div className='relative md:-mt-22 mt-10 md:pr-24 w-full z-6'>
+    
+    <img src={home_banner} alt="" className='shadow-lg rounded z-5 w-full' />  
+     <motion.div className=' absolute -top-0 right-10 -z-10  md:w-[200px] md:h-[200px] blur-3xl rounded-full bg-button'
+        animate={{
+        y: [0, -20],  
+        x: [0, 15],    
+      }}
+      transition={{
+        y: {
+          duration: 3,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        },
+        x: {
+          duration: 5,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        },
+      }}>
+      </motion.div>
+    </div>  
+
+    </div>
+  )
+}
+
+export default Header
