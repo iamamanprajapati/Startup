@@ -1,24 +1,29 @@
 import React from 'react'
 import Design from "../assets/Design.png"
 import home_banner from "../assets/banner_home01.jpg"
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const Header = () => {
 
   return (
     <div className='w-full  bg-primary'>
     <div className='relative max-w-7xl mx-auto  py-3 sm:py-7 px-6 text-white flex flex-col md:flex-row gap-8 justify-between md:items-center'>
+        
         <h1 className='z-10 uppercase text-4xl sm:text-7xl leading-12 sm:leading-18 md:text-[100px] lg:text-[125px] font-bold md:leading-30'>
             best 
-            <br/>
-            <span className='outline-text'>website</span> 
-            <br/>
+            <motion.div 
+            initial={{ x: -400, opacity: 0 }} // Start from left and hidden
+            animate={{ x: 0, opacity: 1 }}    // Animate to original position
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className='outline-text'>website</motion.div> 
             development
-            <br/>
-            <span className='outline-text'>& Content</span>
-            <br/>
+            <motion.div 
+            initial={{ x: 400, opacity: 0 }} // Start from left and hidden
+            animate={{ x: 0, opacity: 1 }}    // Animate to original position
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className='outline-text '
+            >& Content</motion.div>
             Creation
-            
         </h1>
         <div className='flex md:absolute  right-0 z-1'>
             <img src={Design} alt="Design image" />
