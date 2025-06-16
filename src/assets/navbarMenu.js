@@ -21,7 +21,7 @@ export const NavbarMenu = [
     },
     {
         id:6,
-        menuItem:"Contact",
+        menuItem:"let's talk",
     },
 
 ]

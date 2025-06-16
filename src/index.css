@@ -4,6 +4,7 @@
 
 *{
     font-family: "Poppins", sans-serif;
+    --webkit-scrollbar:none;
 }
 
 @theme{
@@ -11,4 +12,9 @@
   --color-primary: #111828;
   --color-secondary: #1e2938;
   --color-button:#f44900;
+  --color-colortext:#f44900;
+}
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* outline with white color */
 }
