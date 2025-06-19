@@ -50,7 +50,7 @@ const Navbar = () => {
                     <li key={menu.id} className={`relative group cursor-pointer
                         ${NavbarMenu.length-1 === index && "bg-button hover:bg-button/90 transition-all hover:-translate-y-1 duration-300 px-4 py-1.5 rounded-md text-white capitalize" }
                     `}>
-                        <a href="#">{menu.menuItem}</a>
+                        <a href={menu.href}>{menu.menuItem}</a>
                         <span className={` ${NavbarMenu.length-1 !== index ?  'absolute left-0 bottom-0 h-0.5 w-0 bg-orange-500 transition-all duration-300 group-hover:w-full ' : ''}`}></span>
                     </li>  
                     ))
@@ -89,7 +89,8 @@ const Navbar = () => {
             ${index === 5 ? 'delay-600' : ''}
           `}
         >
-          <a href="#" className="text-sm font-medium">
+          <a href={menu.href} className="text-sm font-medium  block"
+          onClick={()=>setShowMenu(!showMenu)}>
             {menu.menuItem}
           </a>
         </li>
