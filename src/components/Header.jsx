@@ -9,7 +9,7 @@ const Header = () => {
     <div className='w-full  bg-primary'>
     <div className='relative max-w-7xl mx-auto  py-3 sm:py-7 px-6 text-white flex flex-col md:flex-row gap-8 justify-between md:items-center'>
         
-        <h1 className='z-10 uppercase text-4xl sm:text-7xl leading-12 sm:leading-18 md:text-[100px] lg:text-[125px] font-bold md:leading-30'>
+        <h1 className='z-10 uppercase text-5xl sm:text-7xl leading-14 sm:leading-18 md:text-[100px] lg:text-[125px] font-bold md:leading-30'>
             best 
             <motion.div 
             initial={{ x: -400, opacity: 0 }} // Start from left and hidden
@@ -36,12 +36,12 @@ const Header = () => {
     <img src={home_banner} alt="" className='shadow-lg rounded z-5 w-full' />  
      <motion.div className=' absolute -top-0 right-10 -z-10  md:w-[200px] md:h-[200px] blur-3xl rounded-full bg-button'
         animate={{
-        y: [0, -20],  
+        y: [0, 300],  
         x: [0, 15],    
       }}
       transition={{
         y: {
-          duration: 3,
+          duration: 10,
           repeat: Infinity,
           repeatType: "reverse",
           ease: "easeInOut",
