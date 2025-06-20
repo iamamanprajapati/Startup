@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion ,useMotionValue, useTransform,useSpring} from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
+import { GoArrowRight } from "react-icons/go";
 
 
 
@@ -26,7 +27,7 @@ const ServiceCard = ({card}) => {
   };
   return (
    <motion.div
-      className="relative w-[300px] h-[400px] bg-secondary hover:bg-secondary/30 rounded-xl shadow-2xl cursor-pointer"
+      className="relative  w-full h-[400px] bg-secondary/50  border-[1px] border-gray-600/50 hover:bg-secondary rounded-3xl shadow-3xl cursor-pointer overflow-hidden"
       style={{
         rotateX,
         rotateY,
@@ -37,20 +38,35 @@ const ServiceCard = ({card}) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
+      {/* Gradient Overlay */}
+  <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none" />
+
         <div className="">
-            <div className='p-6 flex justify-between items-center'>
-                <img src={card.icon} alt="" />
-                <div className='w-12 h-12 bg-primary rounded-full flex justify-center items-center'>
+            <div className='p-6 flex justify-center items-center mt-4'>
+                <img src={card.icon} alt="" className='' />
+                {/* <div className='w-12 h-12 bg-primary rounded-full flex justify-center items-center'>
                     <IoIosArrowForward size={24}/>
+                </div> */}
+            </div>
+            <div className='text-center '>
+                    <p className='text-lg text-white'>{card.title}</p>
+                    <p className='text-xs py-2 px-6 text-gray-200 '>{card.description}</p>
+            </div>
+            {
+              card.listItem.map((item,index)=>(
+                 <div key={index} className='px-6 mt-3 flex justify-between items-center'>
+                  <div>
+                    <p className='text-sm text-gray-200'>{item.title}</p>
+                    <p className='text-xs text-gray-400'>{item.about}</p>
+                    </div>
+                    <div className='bg-secondary/70 w-8 h-8 flex items-center justify-center border-[1px] border-gray-600/50 rounded-md'>
+                      <GoArrowRight/>
+                    </div>
+
                 </div>
-            </div>
-            <div className='text-center mt-6 '>
-                    <p className='text-2xl text-gray-300'>{card.title}</p>
-            </div>
-                
-            <div className='absolute bottom-0 '>
-                <img src={card.image} alt="" className='rounded-xl w-full h-[200px]'/>
-            </div>
+              ))
+            }                
+            
         </div>
     </motion.div>
   )

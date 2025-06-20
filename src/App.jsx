@@ -23,7 +23,7 @@ function App() {
       <Services/>
     </section>
     
-    <section id="proccess">
+    <section id="process">
       <Proccess/>
     </section>
     <section id="contact">

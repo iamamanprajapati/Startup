@@ -18,42 +18,262 @@ import webMaintenance from "../assets/serviceIcons/webMaintenece.png"
 import graphic from "../assets/serviceIcons/graphic.png"
 import domain from "../assets/serviceIcons/website.png"
 
-export const servicesData = [
+export const servicesDataDevelopment = [
     {
         id:1,
         title:"Website Development",
+        description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
         icon:website,
         image:image7,
+        listItem:[
+            {
+                title:"Collaboration",
+                about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
     },
     {
         id:2,
         title:"App Development",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
         icon:appDev,
         image:image8,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
     },
     {
         id:3,
         title:"Digital Marketing",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
         icon:marketing,
         image:image9,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
     },
     {
         id:4,
         title:"Website Maintenance",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
         icon:webMaintenance,
         image:image10,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
     },
     {
         id:5,
         title:"Graphic Design",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
         icon:graphic,
         image:image11,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
     },
     {
         id:6,
         title:"Domain & Hosting",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
         icon:domain,
         image:image12,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
+    }
+
+]
+
+export const mediaData = [
+    {
+        id:1,
+        title:"Content creation",
+        description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        icon:website,
+        image:image7,
+        listItem:[
+            {
+                title:"Collaboration",
+                about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
+    },
+    {
+        id:2,
+        title:"Video Editing",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        icon:appDev,
+        image:image8,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
+    },
+    {
+        id:3,
+        title:"Adds Making",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        icon:marketing,
+        image:image9,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
+    },
+    {
+        id:4,
+        title:"Website Maintenance",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        icon:webMaintenance,
+        image:image10,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
+    },
+    {
+        id:5,
+        title:"Graphic Design",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        icon:graphic,
+        image:image11,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
+    },
+    {
+        id:6,
+        title:"Domain & Hosting",
+         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        icon:domain,
+        image:image12,
+        listItem:[
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+            {
+                title:"Collaboration",
+                 about:"Trearted as partnership"
+            },
+        ]
     }
 
 ]
