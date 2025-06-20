@@ -1,5 +1,6 @@
 import React from 'react'
 import Design from "../assets/Design.png"
+import headerImage from "../assets/headerImage.svg"
 import home_banner from "../assets/banner_home01.jpg"
 import { motion } from "framer-motion";
 
@@ -25,8 +26,8 @@ const Header = () => {
             >& Content</motion.div>
             Creation
         </h1>
-        <div className='flex md:absolute  right-0 z-1'>
-            <img src={Design} alt="Design image" />
+        <div className='flex md:absolute  right-0 z-1 max-w-[400px]'>
+            <img src={headerImage} alt="Design image" />
         </div>
 
     </div>

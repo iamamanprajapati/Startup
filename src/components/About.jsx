@@ -97,8 +97,8 @@ const About = () => {
             whileInView={{ x: 0, opacity: 1 }} // Animate to original position
             transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true }}
-          className="w-full md:w-1/2 flex gap-6">
-            <div className="flex flex-col  gap-4 ">
+          className="w-full md:w-1/2 flex gap-6 justify-center">
+            <div className="flex flex-col   gap-4 ">
               {
             [image1,image2,image3].map((image,index)=>(
               <div key={index} >
@@ -128,27 +128,32 @@ const About = () => {
         className="flex flex-col md:flex-row gap-12  items-center justify-around  mt-44 overflow-x-hidden">
 
           <motion.div
-          // initial={{ opacity: 0, y: 50 }}
-          // animate={inView ? { opacity: 1, y: 0 } : {}}
-          // transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
            >
             <FaRegCircleCheck size={24} className="text-orange-400"/>
             <h3 className="outline-text-gray text-9xl text-gray-800 font-semibold my-2 min-w-[250px]">{inView && <CountUp end={250} duration={2} />}</h3>
             <p className="text-lg uppercase text-gray-300">project</p>
           </motion.div>
-          <div >
+          <motion.div 
+           initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          >
             <FaRegCircleCheck size={24} className="text-orange-400"/>
             <h3 className="text-9xl font-semibold text-orange-400 my-2 min-w-[250px] ">{inView && <CountUp end={125} duration={2} />}</h3>
             <p className="text-lg uppercase text-gray-300">Clients</p>
-          </div>
-          <div >
+          </motion.div>
+          <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}>
             <FaRegCircleCheck size={24} className="text-orange-400"/>
             <h3 className="outline-text-gray text-gray-400 text-9xl font-semibold my-2 min-w-[250px]">{inView && <CountUp end={20} duration={2} />}+</h3>
             <p className="text-lg uppercase text-gray-300">Exprets</p>
-          </div>
-
+          </motion.div>
         </div>
-
       </div>
     </div>
   );
