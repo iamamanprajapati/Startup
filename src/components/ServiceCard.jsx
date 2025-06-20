@@ -6,7 +6,6 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const ServiceCard = ({card}) => {
 
-    console.log(card)
     const x = useMotionValue(0.5);
     const y = useMotionValue(0.5);
 

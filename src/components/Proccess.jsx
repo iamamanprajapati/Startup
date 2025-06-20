@@ -1,24 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { processData } from "../assets/data";
+import ProcessCard from "./ProcessCard";
 
-import {servicesData} from "../assets/data"
-import ServiceCard from "./ServiceCard";
+const Proccess = () => {
+  const [data,setData] = useState([]);
 
-const Services = () => {
+  const fetchProcessData = ()=>{
+    setData(processData);
+  }
 
-
-    const [data,setData] = useState([]);
-    const fetchData = async()=>
-    {
-        setData(servicesData);
-    }
-
-    useEffect(()=>{ 
-        fetchData();
-    },[])
-
-
+  useEffect(()=>{
+    fetchProcessData();
+  },[])
   return (
     <div className="bg-primary py-12">
       <div className="max-w-7xl mx-auto  sm:py-7 px-6 text-white">
@@ -31,12 +26,11 @@ const Services = () => {
           >
             <BsArrowRight size={24} className="text-colortext" />
           </motion.div>
-          <h3 className="text-colortext text-sm md:text-xl">All Services</h3>
+          <h3 className="text-colortext text-sm md:text-xl">Process</h3>
         </div>
-
         <div className="text-center">
           <p className="text-3xl md:text-5xl text-center font-semibold mt-4">
-            Our Services
+            Our Process
           </p>
           <p className="text-gray-300 text-center mx-auto mt-4 w-full md:w-1/2">
             Comprehensive Website Services to Ignite Your Online Success.
@@ -45,14 +39,13 @@ const Services = () => {
           </p>
         </div>
 
-        {/* cards sections  */}
-
-        <div className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mt-20 gap-10">
-            {
-                data.map((item,index)=>(
-                    <ServiceCard key={item.id} card={item}/>
-                ))
-            }
+        {/* process card */}
+        <div className="flex flex-col gap-12 mt-16">
+        {
+            data.map((item,index)=>(
+                <ProcessCard key={item.id} data={item}/>
+            ))
+        }
         </div>
 
       </div>
@@ -61,4 +54,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Proccess;
