@@ -14,7 +14,7 @@ const Portfolio = () => {
           </p>
           <p className="text-gray-300 text-center mx-auto mt-4 w-full md:w-1/2">
             Discover our creative work, with top on the internet, From awarding
-            website to stunning apps see how we bring ideas to life
+            website to stunning apps see how we bring ideas to life.
           </p>
         </div>
 
