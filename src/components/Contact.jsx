@@ -70,8 +70,6 @@ const Contact = () => {
 
         </div>
         
-        <div className="w-full h-screen"></div>
-
     </div>
   )
 }

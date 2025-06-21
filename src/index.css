@@ -27,3 +27,32 @@ html {
   color: transparent;
   -webkit-text-stroke: 1px rgb(109, 106, 106); /* outline with white color */
 }
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 20s linear infinite;
+}
+.animate-scroll-down {
+  animation: scroll-down 25s linear infinite;
+}
+.animate-scroll-slow {
+  animation: scroll-up 35s linear infinite;
+}
+
