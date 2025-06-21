@@ -55,10 +55,10 @@ const Services = () => {
         <div className="flex transition-all duration-300 gap-x-6 bg-secondary w-fit py-2 px-3 rounded-full text-sm my-16">
           <button
           onClick={()=>setTab("Development")}
-          className={`transition-all duration-300 ${tab === "Development" ? "bg-orange-500 py-1 px-3 rounded-full" : "py-1 px-3 rounded-full"}`}>Development</button>
+          className={`transition-all duration-300 ${tab === "Development" ? "bg-colortext py-1 px-3 rounded-full" : "py-1 px-3 rounded-full"}`}>Development</button>
           <button 
             onClick={()=>setTab("Media")}
-          className={`transition-all duration-300 ${tab === "Media" ? "bg-orange-500 py-1 px-3 rounded-full" : "py-1 px-3 rounded-full"}`}>Media</button>
+          className={`transition-all duration-300 ${tab === "Media" ? "bg-colortext py-1 px-3 rounded-full" : "py-1 px-3 rounded-full"}`}>Media</button>
         </div>
 
         <div className="grid px-2 transition-all duration-200 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10">

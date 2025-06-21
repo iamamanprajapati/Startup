@@ -17,6 +17,7 @@ import marketing from "../assets/serviceIcons/marketing.png"
 import webMaintenance from "../assets/serviceIcons/webMaintenece.png"
 import graphic from "../assets/serviceIcons/graphic.png"
 import domain from "../assets/serviceIcons/website.png"
+import python from "../assets/python.png"
 
 export const servicesDataDevelopment = [
     {
@@ -278,7 +279,6 @@ export const mediaData = [
 
 ]
 
-
 export const  processData = [
 
     {
@@ -365,4 +365,143 @@ export const  processData = [
         images:[image7,image8]
     }
 
+]
+
+export const categories = [
+    {
+        id:1,
+        title:"All Projects"
+    },
+    {
+        id:2,
+        title:"Webiste"
+    },
+    {
+        id:3,
+        title:"Mobile App"
+    },
+    {
+        id:4,
+        title:"Video Editing"
+    },
+    {
+        id:6,
+        title:"Thumbnails"
+    },
+]
+
+
+export const protfolioData = [
+    {
+        id:1,
+        category:"Webiste",
+        title:"Learnify websiet",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:2,
+        category:"Webiste",
+        title:"Learnify websiet 2",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:3,
+        category:"Webiste",
+        title:"Learnify websiet 3",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:4,
+        category:"Webiste",
+        title:"Learnify websiet 4",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:5,
+        category:"Mobile App",
+        title:"Learnify Mobile 1",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:6,
+        category:"Mobile App",
+        title:"Learnify Mobile 2",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:7,
+        category:"Mobile App",
+        title:"Learnify Mobile 3",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:8,
+        category:"Mobile App",
+        title:"Learnify Mobile 4",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:9,
+        category:"Video Editing",
+        title:"Video Editing with experts 1",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:10,
+        category:"Video Editing",
+        title:"Video Editing with experts 2",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:11,
+        category:"Video Editing",
+        title:"Video Editing with experts 3",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:12,
+        category:"Video Editing",
+        title:"Video Editing with experts 4",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:13,
+        category:"Thumbnails",
+        title:"Thumbnails Editing with experts 1",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:14,
+        category:"Thumbnails",
+        title:"Thumbnails Editing with experts 2",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:15,
+        category:"Thumbnails",
+        title:"Thumbnails Editing with experts 3",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
+    {
+        id:16,
+        category:"Thumbnails",
+        title:"Thumbnails Editing with experts 4",
+        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
+        icon:python
+    },
 ]
