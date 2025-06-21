@@ -18,8 +18,8 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="flex justify-center">
-          <div className="flex transition-all duration-300 bg-secondary w-fit gap-x-4 py-2 px-3 rounded-full text-sm my-16">
+        <div className="flex  justify-center">
+          <div className="flex gap-y-4 sm:gap-y-2 flex-wrap transition-all duration-300 bg-secondary  gap-x-4 py-2 px-3 rounded-2xl sm:rounded-full text-sm my-16">
             {categories.map((category) => (
               <button
                 key={category.id}
