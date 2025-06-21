@@ -1,10 +1,13 @@
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Header from "./components/Header"
+import InfiniteSlider from "./components/Testimonials"
 import Navbar from "./components/Navbar"
 import Portfolio from "./components/Portfolio"
 import Proccess from "./components/Proccess"
 import Services from "./components/Services"
+import Testimonials from "./components/Testimonials"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -30,13 +33,19 @@ function App() {
     <section id="portfolio">
       <Portfolio/>
     </section>
+    <section id="testimonials">
+    <Testimonials/>
+    </section>
 
     <section id="contact">
       <Contact/>
     </section>
 
-      {/*<section id="proccess" className="h-screen bg-gray-400">Process Section</section>
-      <section id="contact" className="h-screen bg-gray-500">Contact Section</section> */}
+    <section >
+      <Footer/>
+    </section>
+
+    
 
     </div>
   )

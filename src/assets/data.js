@@ -505,3 +505,19 @@ export const protfolioData = [
         icon:python
     },
 ]
+
+export const footerData= [
+    {
+        title:"Quick Links",
+        items:['Home','About','Services','Testimonials','Contact']
+    },
+    {
+        title:"Our Services",
+        items:['Website Development','Mobile App Development','Video Editing','Thumbnails'],
+    },
+    {
+        title:"Get In Touch",
+        subTitle:['Email','Response Time','Support'],
+        items:['hello@connect.com','With in 24 hours','24/7 Available'],
+    },
+]

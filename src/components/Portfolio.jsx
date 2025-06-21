@@ -27,7 +27,7 @@ const Portfolio = () => {
                   category.title === selectedCategory
                     ? "bg-colortext py-1 px-3 md:py-1 md:px-6 rounded-full text-white "
                     : "py-1 px-3 md:py-2 md:px-6 rounded-full text-gray-400"
-                } transition-all duration-300 text-xs md:text-base`}
+                } transition-all duration-300 text-xs md:text-base hover:bg-colortext hover:text-white`}
                 onClick={() => setSelectedCategory(category.title)}
               >
                 {category.title}
