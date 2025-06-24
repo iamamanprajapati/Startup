@@ -4,7 +4,7 @@ const Loader = () => {
   return (
     <div className='w-full h-screen flex items-center justify-center'>
 
-        <div class="spinner"></div>
+        <div className="spinner"></div>
 
       
     </div>
