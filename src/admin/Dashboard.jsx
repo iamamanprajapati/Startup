@@ -11,6 +11,7 @@ const Dashboard = () => {
   const[loading,setLloading] = useState(false);
   const navigate = useNavigate();
 
+
   const fetchQueriesData  = async()=>{
     try{
     setLloading(true);
@@ -30,6 +31,11 @@ const Dashboard = () => {
   useEffect(()=>{
     fetchQueriesData();
   },[])
+
+
+  const handleDeleteFromList = (id) => {
+    setQueryData(prev => prev.filter(query => query._id !== id));
+  };
 
   if(loading) return <Loader/>
 
@@ -51,7 +57,7 @@ const Dashboard = () => {
         <div className='grid mt-4 gap-4 grid-cols-1  md:grid-cols-2 lg:grid-cols-3'>
         {
           queryData.map((query)=>(
-            <QueryCard key={query._id} data={query}/>
+            <QueryCard key={query._id} data={query} onDelete={handleDeleteFromList}/>
           ))
         }
         </div>

@@ -128,7 +128,7 @@ const ContactForm = () => {
         <div className="w-full mt-12 ">
             <button  
             disabled={loading}
-            className="white bg-colortext/70 hover:bg-colortext/50 transition-all duration-200 rounded-md w-full p-4 font-semibold cursor-pointer">
+            className="white bg-colortext hover:bg-colortext/50 transition-all duration-200 rounded-md w-full p-4 font-semibold cursor-pointer">
                 { loading  ? "Please Wait..."  : "Send My Request"}
             </button>
         </div>
