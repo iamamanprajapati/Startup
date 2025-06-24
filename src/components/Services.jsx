@@ -63,13 +63,30 @@ const Services = () => {
 
         <div className="grid px-2 transition-all duration-200 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10">
             {
-                tab === "Development" ? developmentData.map((item,index)=>(
-                    <ServiceCard key={item.id} card={item}/>
-                ))  : 
-                 tab === "Media" && media.map((item,index)=>(
-                    <ServiceCard key={item.id} card={item}/>
-                )) 
+                tab === "Development" && developmentData.map((item,index)=>(
+                  <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
+                    >
+                   <ServiceCard  card={item}/>
+                   </motion.div>
+                ))
             }
+
+            {
+             tab === "Media" && media.map((item,index)=>(
+                     <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
+                    >
+                    <ServiceCard  card={item}/>
+                  </motion.div>
+                )) 
+              }
         </div>
 
       </div>

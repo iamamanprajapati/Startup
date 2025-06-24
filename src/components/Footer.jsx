@@ -20,8 +20,8 @@ const Footer = () => {
                              {data.title}
                         </h2>
                        
-                        {data.items.map((item)=>(
-                            <div>
+                        {data.items.map((item,index)=>(
+                            <div key={index}>
                             <p></p>
                             <p className="text-sm text-gray-400 hover:underline cursor-pointer mt-1">{item}</p>
 

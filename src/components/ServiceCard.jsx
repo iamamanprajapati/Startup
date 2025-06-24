@@ -24,7 +24,7 @@ const ServiceCard = ({ card }) => {
   };
   return (
     <motion.div
-      className="relative  w-full h-[400px] bg-secondary  shadow-2xl border-gray-600/50 hover:border-[1px] rounded-3xl shadow-3xl cursor-pointer overflow-hidden"
+      className="relative  w-full min-h-[440px] bg-secondary  shadow-2xl border-gray-600/50 hover:border-[1px] rounded-3xl shadow-3xl cursor-pointer overflow-hidden"
       style={{
         rotateX,
         rotateY,
@@ -36,23 +36,24 @@ const ServiceCard = ({ card }) => {
       onMouseLeave={handleMouseLeave}
     >
       {/* Gradient Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none" />
+      <div className="absolute  top-0 left-0 w-full h-full z-0 pointer-events-none" />
 
       <div className="">
-        <div className="p-6 flex justify-center items-center mt-4">
+        <div className="p-6  flex justify-center items-center mt-4">
           <img src={card.icon} alt="" className="" />
           {/* <div className='w-12 h-12 bg-primary rounded-full flex justify-center items-center'>
                     <IoIosArrowForward size={24}/>
                 </div> */}
         </div>
         <div className="text-center ">
-          <p className="text-lg text-white">{card.title}</p>
-          <p className="text-xs py-2 px-6 text-gray-200 ">{card.description}</p>
+          <p className="text-lg text-white mb-3">{card.title}</p>
+          <p className="text-xs  px-6 text-gray-200 ">{card.description}</p>
         </div>
+        <div className="mt-8">
         {card.listItem.map((item, index) => (
           <div
             key={index}
-            className="px-6 mt-3 flex justify-between items-center"
+            className="px-6 mt-4 gap-x-3 flex justify-between items-center"
           >
             <div>
               <p className="text-sm text-gray-200">{item.title}</p>
@@ -63,6 +64,7 @@ const ServiceCard = ({ card }) => {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </motion.div>
   );

@@ -68,15 +68,15 @@ const About = () => {
           className="w-full md:w-1/2 flex flex-col gap-8">
             <div className="bg-secondary shadow-lg rounded-lg p-6">
               <h3 className="text-2xl font-semibold">Our Mission</h3>
-              <p className="text-sm text-gray-400 mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quo officiis, consequuntur repellat cupiditate dignissimos sunt facilis rerum reprehenderit unde? Nostrum quos labore unde repellendus alias aspernatur fuga totam nam.</p>
+              <p className="text-sm text-gray-400 mt-3">Our mission is to deliver innovative digital solutions through expert social media marketing, app development, and software services that empower businesses to grow, engage customers, and achieve success.</p>
             </div>
 
             <div className="bg-secondary shadow-lg rounded-lg p-6">
               <h3 className="text-2xl font-semibold mb-4">Why Choose Us</h3>
               {
-                ["Expert team with 5+ years experience"
-                  ,"24/7 support and quick turnaround",
-                  "Proven track record with top creators"
+                ["Expert Team – Skilled professionals in marketing and development."
+                  ,"Custom Solutions – Tailored strategies for your business needs.",
+                  "Proven Results – Track record of delivering success and growth."
                 ].map((item,index)=>(
                   <div key={index} className="flex mt-2 items-center gap-x-3 text-sm text-gray-400">
                     <FaStar className="text-orange-400"/>
@@ -86,8 +86,8 @@ const About = () => {
               }
             </div>
             <div className="bg-secondary shadow-lg rounded-lg p-6">
-              <h3 className="text-2xl font-semibold">Our Mission</h3>
-              <p className="text-sm text-gray-400 mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quo officiis, consequuntur repellat cupiditate dignissimos sunt facilis rerum reprehenderit unde? Nostrum quos labore unde repellendus alias aspernatur fuga totam nam.</p>
+              <h3 className="text-2xl font-semibold">Who we are</h3>
+              <p className="text-sm text-gray-400 mt-3">We are a passionate team of creatives and developers dedicated to delivering impactful digital solutions, blending strategy, technology, and innovation to help businesses grow and succeed online.</p>
             </div>
           </motion.div>
 

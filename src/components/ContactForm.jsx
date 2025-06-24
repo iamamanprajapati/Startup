@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import axios from "axios"
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
 
@@ -7,10 +9,35 @@ const ContactForm = () => {
     const [service,setService] = useState('')
     const [about,setAbout] = useState('')
     const [country,setCountry] = useState('')
+    const[loading,setLloading] = useState(false);
 
-    const handleSubmit =(e)=>{
+    const formData =  {name,email,service,about,country}
+    const handleSubmit =async(e)=>{
         e.preventDefault();
+        setLloading(true);
+        try{
+          const respose =  await axios.post(`${import.meta.env.VITE_SERVER_BASE_URL}/add-contact`,formData)
+        if(!respose.data.success){
+          console.log(respose.data.message);
+          console.log("unable to submit the form")
+          toast.error("Submission failed");
+
+        }
+        toast.success("Query submited successfully.")
+        }catch(error){
+          toast.error(error.message)
+        }finally{
+        
+      setName("");
+      setEmail("");
+      setAbout("");
+      setService("");
+      setCountry("");
+      setLloading(false);
+        }
+      
     }
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -36,7 +63,7 @@ const ContactForm = () => {
             Your Email <span>*</span>{" "}
           </label>
           <input
-            type="text"
+            type="email"
             placeholder="Enter your email"
             required
             onChange={(e)=>setEmail(e.target.value)}
@@ -99,8 +126,10 @@ const ContactForm = () => {
             </select>
         </div>
         <div className="w-full mt-12 ">
-            <button className="white bg-colortext/70 hover:bg-colortext/50 transition-all duration-200 rounded-md w-full p-4 font-semibold cursor-pointer">
-                Send My Request
+            <button  
+            disabled={loading}
+            className="white bg-colortext/70 hover:bg-colortext/50 transition-all duration-200 rounded-md w-full p-4 font-semibold cursor-pointer">
+                { loading  ? "Please Wait..."  : "Send My Request"}
             </button>
         </div>
     </form>
