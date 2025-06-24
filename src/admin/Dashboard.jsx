@@ -11,6 +11,7 @@ const Dashboard = () => {
   const[loading,setLloading] = useState(false);
   const navigate = useNavigate();
 
+
   const fetchQueriesData  = async()=>{
     try{
     setLloading(true);
@@ -31,6 +32,11 @@ const Dashboard = () => {
     fetchQueriesData();
   },[])
 
+
+  const handleDeleteFromList = (id) => {
+    setQueryData(prev => prev.filter(query => query._id !== id));
+  };
+
   if(loading) return <Loader/>
 
   return (
@@ -42,7 +48,7 @@ const Dashboard = () => {
         className='cursor-pointer text-gray-600  bg-secondary w-fit px-6 p-1 transition-all duration-200 rounded-full hover:text-gray-200 hover:bg-secondary/70'>
           <span>Back To Home</span>
         </div>
-        <p className='text-4xl text-center font-bold underline'>
+        <p className='text-4xl text-center font-bold underline mt-12'>
           Admin Dashboard
         </p>
         <div className='mt-8'>
@@ -51,7 +57,7 @@ const Dashboard = () => {
         <div className='grid mt-4 gap-4 grid-cols-1  md:grid-cols-2 lg:grid-cols-3'>
         {
           queryData.map((query)=>(
-            <QueryCard key={query._id} data={query}/>
+            <QueryCard key={query._id} data={query} onDelete={handleDeleteFromList}/>
           ))
         }
         </div>
