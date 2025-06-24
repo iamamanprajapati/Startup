@@ -6,12 +6,13 @@ const ContactForm = () => {
 
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
+    const [phoneNumber,setPhoneNumber] = useState('')
     const [service,setService] = useState('')
     const [about,setAbout] = useState('')
     const [country,setCountry] = useState('')
     const[loading,setLloading] = useState(false);
 
-    const formData =  {name,email,service,about,country}
+    const formData =  {name,email,phoneNumber,service,about,country}
     const handleSubmit =async(e)=>{
         e.preventDefault();
         setLloading(true);
@@ -33,6 +34,7 @@ const ContactForm = () => {
       setAbout("");
       setService("");
       setCountry("");
+      setPhoneNumber("")
       setLloading(false);
         }
       
@@ -47,7 +49,7 @@ const ContactForm = () => {
       <div className="flex flex-col sm:flex-row justify-between items-center gap-8 mt-12">
         <div className="flex flex-col w-full">
           <label htmlFor="name" className="text-xs text-gray-600">
-            Your Name/Company Name <span>*</span>{" "}
+            Your Name/Company Name <span className="text-red-400">*</span>{" "}
           </label>
           <input
             type="text"
@@ -60,7 +62,7 @@ const ContactForm = () => {
         </div>
         <div className="flex flex-col w-full">
           <label htmlFor="email" className="text-xs text-gray-600">
-            Your Email <span>*</span>{" "}
+            Your Email <span className="text-red-400">*</span>{" "}
           </label>
           <input
             type="email"
@@ -74,8 +76,22 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col w-full mt-4">
+          <label htmlFor="email" className="text-xs text-gray-600">
+            Phone Number <span className="text-red-400">*</span>{" "}
+          </label>
+          <input
+            type="text"
+            placeholder="Enter Phone Number"
+            required
+            onChange={(e)=>setPhoneNumber(e.target.value)}
+            value={phoneNumber}
+            className="w-full p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm "
+          />
+        </div>
+
+      <div className="flex flex-col w-full mt-4">
           <label htmlFor="name" className="text-xs text-gray-600">
-            I Need <span>*</span>{" "}
+            I Need <span className="text-red-400">*</span>{" "}
           </label>
             <select
             required
@@ -93,7 +109,7 @@ const ContactForm = () => {
 
          <div className="flex flex-col w-full mt-4">
           <label htmlFor="email" className="text-xs text-gray-600">
-            About Your Project <span>*</span>{" "}
+            About Your Project <span className="text-red-400">*</span>{" "}
           </label>
           <textarea
             type="text"
@@ -109,7 +125,7 @@ const ContactForm = () => {
 
       <div className="flex flex-col w-full mt-4">
           <label htmlFor="name" className="text-xs text-gray-600">
-            Country <span>*</span>{" "}
+            Country <span className="text-red-400">*</span>{" "}
           </label>
             <select
             required

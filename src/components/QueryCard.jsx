@@ -34,7 +34,7 @@ const QueryCard = ({data,onDelete}) => {
       if(password !== "Coder1234"){
         return;
       }
-      
+
       const response = await axios.post(`${import.meta.env.VITE_SERVER_BASE_URL}/deleteQuery/${data._id}`);;
       if (!response.data.success) {
         toast.error(response.data.message || "Failed to update");
@@ -56,7 +56,8 @@ const QueryCard = ({data,onDelete}) => {
       </div>
     <p className='text-xl'>Name : {data.name}</p> 
     <p>Email : {data.email}</p>
-    <p>Service:  {data.service}</p>
+    <p>Email : {data.phoneNumber}</p>
+    <p>Service :  {data.service}</p>
     <p>Country : {data.country}</p>
     <p>Message : {data.projectDetail}</p>
     <span className='text-sm text-gray-600'>Date : {deteFormater(data.createdAt)}</span>
