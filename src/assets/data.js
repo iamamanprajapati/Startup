@@ -1,148 +1,148 @@
-import image1 from "../assets/image1.jpeg"
-import image2 from "../assets/image2.jpeg"
-import image3 from "../assets/image3.jpeg"
-import image4 from "../assets/image4.jpeg"
-import image5 from "../assets/image5.jpeg"
-import image6 from "../assets/image6.jpeg"
-import image7 from "../assets/image7.jpeg"
-import image8 from "../assets/image8.jpeg"
-import image9 from "../assets/image9.jpeg"
-import image10 from "../assets/image10.jpeg"
-import image11 from "../assets/image11.jpeg"
-import image12 from "../assets/image12.jpeg"
-import image13 from "../assets/image13.jpeg"
-import website from "../assets/serviceIcons/development.png"
-import appDev from "../assets/serviceIcons/appDev.png"
-import marketing from "../assets/serviceIcons/marketing.png"
-import webMaintenance from "../assets/serviceIcons/webMaintenece.png"
-import graphic from "../assets/serviceIcons/graphic.png"
-import domain from "../assets/serviceIcons/website.png"
-import python from "../assets/python.png"
+import image1 from "./image1.jpeg"
+import image2 from "./image2.jpeg"
+import image3 from "./image3.jpeg"
+import image4 from "./image4.jpeg"
+import image5 from "./image5.jpeg"
+import image6 from "./image6.jpeg"
+import image7 from "./image7.jpeg"
+import image8 from "./image8.jpeg"
+import image9 from "./image9.jpeg"
+import image10 from "./image10.jpeg"
+import image11 from "./image11.jpeg"
+import image12 from "./image12.jpeg"
+import image13 from "./image13.jpeg"
+import website from "./development.png"
+import appDev from "./mobile-development.png"
+import marketing from "./machine-learning.png"
+import AiMl from "./machine-learning.png"
+import graphic from "./serviceIcons/graphic.png"
+import domain from "./serviceIcons/website.png"
+import python from "./python.png"
 
 export const servicesDataDevelopment = [
     {
         id:1,
         title:"Website Development",
-        description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        description:"From design to deployment, we build fast, responsive, and scalable websites tailored to grow your business in the digital world.",
         icon:website,
         image:image7,
         listItem:[
             {
-                title:"Collaboration",
-                about:"Trearted as partnership"
+                title:"User-Focused Design",
+                about:"We create intuitive interfaces that drive engagement."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Scalable Architecture",
+                 about:"Built to grow with your business goals."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Ongoing Support",
+                 about:"Partnership beyond launch with reliable support."
             },
         ]
     },
     {
         id:2,
         title:"App Development",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+         description:"We craft high-performance mobile apps tailored to your business—designed for usability, speed, and scalability across iOS and Android platforms.",
         icon:appDev,
         image:image8,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"User-Centered UX",
+                 about:"Intuitive, engaging experiences that delight users."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Cross-Platform Ready",
+                 about:"Seamless apps for both iOS and Android."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Future-Proof Code",
+                 about:"Scalable and maintainable architecture."
             },
         ]
     },
     {
         id:3,
-        title:"Digital Marketing",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        title:"Website Maintenance",
+         description:"We ensure your website stays secure, up-to-date, and optimized—so you can focus on growing your business while we handle the tech.",
         icon:marketing,
         image:image9,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Regular Updates",
+                 about:"Timely content, plugin, and system updates."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Performance Monitoring",
+                 about:"Speed, uptime, and health checks 24/7."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Security & Backup",
+                 about:"Protection and recovery you can rely on."
             },
         ]
     },
     {
         id:4,
-        title:"Website Maintenance",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
-        icon:webMaintenance,
+        title:"AI/ML",
+         description:"We build intelligent AI and machine learning solutions that help automate processes, uncover insights, and drive smarter business decisions.",
+        icon:AiMl,
         image:image10,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Data-Driven Models",
+                 about:"Custom models tailored to your business goals."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Predictive Insights",
+                 about:"Forecast trends and behaviors with accuracy."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Process Automation",
+                 about:"Streamline operations using intelligent automation."
             },
         ]
     },
     {
         id:5,
-        title:"Graphic Design",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        title:"Cross-Platform App Development",
+         description:"We develop high-quality apps using a single codebase for iOS and Android—saving time, reducing cost, and ensuring a consistent user experience.",
         icon:graphic,
         image:image11,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Single Codebase",
+                 about:"Faster development with unified architecture."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Native Performance",
+                 about:"Optimized for speed and responsiveness."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Consistent UX",
+                 about:"Seamless experience across all devices."
             },
         ]
     },
     {
         id:6,
-        title:"Domain & Hosting",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        title:"Website SEO",
+         description:"We optimize your website to rank higher, load faster, and reach the right audience—boosting visibility, traffic, and conversions.",
         icon:domain,
         image:image12,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"On-Page Optimization",
+                 about:"Improve structure, keywords, and content."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Technical SEO",
+                 about:"Enhance speed, indexing, and performance."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Keyword Strategy",
+                 about:"Targeted terms to attract ideal customers."
             },
         ]
     }
@@ -152,127 +152,127 @@ export const servicesDataDevelopment = [
 export const mediaData = [
     {
         id:1,
-        title:"Content creation",
-        description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        title:"Digital Marketing",
+        description:"We create data-driven digital campaigns that increase visibility, drive engagement, and deliver measurable results across all major online platforms.",
         icon:website,
         image:image7,
         listItem:[
             {
-                title:"Collaboration",
-                about:"Trearted as partnership"
+                title:"Targeted Campaigns",
+                about:"Reach the right audience at the right time."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Multi-Channel Strategy",
+                 about:"Unified presence across web, search, and social."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Performance Analytics",
+                 about:"Track ROI with real-time insights."
             },
         ]
     },
     {
         id:2,
-        title:"Video Editing",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        title:"Content Creation",
+         description:"We craft compelling, high-quality content that tells your brand story, engages your audience, and drives conversions across digital platforms.",
         icon:appDev,
         image:image8,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Engaging Copy",
+                 about:"Clear, persuasive messaging that connects."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Visual Content",
+                 about:"Graphics and videos that capture attention."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Platform Ready",
+                 about:"Optimized for web, social, and campaigns."
             },
         ]
     },
     {
         id:3,
-        title:"Adds Making",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        title:"Video Editing",
+         description:"We turn raw footage into captivating videos that tell your story, enhance your brand, and engage your audience across all platforms.",
         icon:marketing,
         image:image9,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Creative Storytelling",
+                 about:"Crafted narratives that leave a lasting impact."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"High-Quality Edits",
+                 about:"Smooth transitions, effects, and sound design."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Platform Optimized",
+                 about:"Tailored formats for social, web, and ads."
             },
         ]
     },
     {
         id:4,
-        title:"Website Maintenance",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
-        icon:webMaintenance,
+        title:"Ads Marketing & Creation",
+         description:"We design and manage high-performing ad campaigns that capture attention, drive traffic, and convert viewers into customers across digital platforms.",
+        icon:AiMl,
         image:image10,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Creative Ad Design",
+                 about:"Visually impactful and message-driven creatives."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Targeted Campaigns",
+                 about:"Reach the right audience with precision."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Performance Tracking",
+                 about:"Optimize results with data-driven insights."
             },
         ]
     },
     {
         id:5,
-        title:"Graphic Design",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        title:"Podcast Shooting & Editing",
+         description:"We help bring your voice to life with professional podcast recording and editing—delivering high-quality audio content that connects with your audience.",
         icon:graphic,
         image:image11,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Studio-Quality Recording",
+                 about:"Clear sound with pro-level equipment."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Clean Audio Edits",
+                 about:"Noise reduction, mixing, and mastering."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Engaging Delivery",
+                 about:"Polished episodes ready for all platforms."
             },
         ]
     },
     {
         id:6,
-        title:"Domain & Hosting",
-         description:"Collaboration. From design to deployment, our solutions are fast, responsive, and built to scale your business in the digital world.",
+        title:"Social Media Management",
+         description:"We manage your social media presence end-to-end—creating content, growing your audience, and keeping your brand active and engaging across all platforms.",
         icon:domain,
         image:image12,
         listItem:[
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Content Planning",
+                 about:"Strategic posts that reflect your brand."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Community Engagement",
+                 about:"Build trust and connect with followers."
             },
             {
-                title:"Collaboration",
-                 about:"Trearted as partnership"
+                title:"Analytics & Growth",
+                 about:"Track performance and grow organically. "
             },
         ]
     }

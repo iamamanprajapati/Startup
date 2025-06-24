@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { NavbarMenu } from '../assets/navbarMenu'
 import { RiMenu2Line } from "react-icons/ri";
 import { RiCloseFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -98,6 +99,8 @@ const Navbar = () => {
     </ul>
   </div>
 }
+
+
     </div>
   )
 }

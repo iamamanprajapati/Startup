@@ -33,9 +33,11 @@ export default function Testimonials() {
             website to stunning apps see how we bring ideas to life.
           </p>
         </div>
-    <div className="relative flex w-full justify-center gap-8 p-6 ">
+    <div className="relative flex w-full justify-center gap-8 ">
 
-      <div className="overflow-hidden h-[500px] w-full">
+
+      <div className=" overflow-hidden h-[500px] w-full">
+
         <div
           ref={column1Ref}
           className="flex flex-col items-center gap-4 animate-scroll-up"
@@ -51,6 +53,7 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
+
       </div>
 
       <div className="overflow-hidden hidden md:block h-[500px] w-full">
@@ -88,6 +91,7 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
+
     </div>
     
     </div>
