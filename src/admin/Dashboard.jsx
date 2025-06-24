@@ -42,7 +42,7 @@ const Dashboard = () => {
         className='cursor-pointer text-gray-600  bg-secondary w-fit px-6 p-1 transition-all duration-200 rounded-full hover:text-gray-200 hover:bg-secondary/70'>
           <span>Back To Home</span>
         </div>
-        <p className='text-4xl text-center font-bold underline'>
+        <p className='text-4xl text-center font-bold underline mt-12'>
           Admin Dashboard
         </p>
         <div className='mt-8'>
