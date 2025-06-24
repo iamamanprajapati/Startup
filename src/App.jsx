@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 
   import { ToastContainer } from 'react-toastify';
 import { Route, Routes } from "react-router-dom"
-import Dashboard from "./admin/dashboard"
+import Dashboard from "./admin/Dashboard"
 
 function App() {
 
