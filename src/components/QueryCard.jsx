@@ -56,7 +56,7 @@ const QueryCard = ({data,onDelete}) => {
       </div>
     <p className='text-xl'>Name : {data.name}</p> 
     <p>Email : {data.email}</p>
-    <p>Email : {data.phoneNumber}</p>
+    <p>Phone No : {data.phoneNumber}</p>
     <p>Service :  {data.service}</p>
     <p>Country : {data.country}</p>
     <p>Message : {data.projectDetail}</p>
