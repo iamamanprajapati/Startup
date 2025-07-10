@@ -24,7 +24,7 @@ const ServiceCard = ({ card }) => {
   };
   return (
     <motion.div
-      className="relative  w-full min-h-[440px] bg-secondary  shadow-2xl border-gray-600/50 hover:border-[1px] rounded-3xl shadow-3xl cursor-pointer overflow-hidden"
+      className="relative  w-full min-h-[480px] bg-secondary  shadow-2xl border-gray-600/50 hover:border-[1px] rounded-3xl shadow-3xl cursor-pointer overflow-hidden"
       style={{
         rotateX,
         rotateY,
@@ -40,7 +40,7 @@ const ServiceCard = ({ card }) => {
 
       <div className="">
         <div className="p-6  flex justify-center items-center mt-4">
-          <img src={card.icon} alt="" className="" />
+          <img src={card.icon} alt="" className="w-24" />
           {/* <div className='w-12 h-12 bg-primary rounded-full flex justify-center items-center'>
                     <IoIosArrowForward size={24}/>
                 </div> */}

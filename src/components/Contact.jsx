@@ -39,7 +39,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <p className='text-gray-300 text-sm'>Email Us</p>
-                        <p className='text-gray-600 text-xs'>hello@growth.com</p>
+                        <p className='text-gray-600 text-xs'>official@brandinghunks.com</p>
                     </div>
                 </div>
 

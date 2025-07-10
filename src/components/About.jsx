@@ -9,6 +9,17 @@ import image3 from "../assets/image3.jpeg";
 import image4 from "../assets/image4.jpeg";
 import image5 from "../assets/image5.jpeg";
 import image6 from "../assets/image6.jpeg";
+
+import  ourBussines1 from  "../assets/aboutUs/ourBussines1.png"
+import  ourBussines2 from  "../assets/aboutUs/ourBussines2.png"
+import  whyChooseUs1 from  "../assets/aboutUs/whyChooseUs1.png"
+import  whyChooseUs2 from  "../assets/aboutUs/whyChooseUs2.png"
+import  whoWeAre1 from  "../assets/aboutUs/whoWeAre1.png"
+import  whoWeAre2 from  "../assets/aboutUs/whoWeAre2.png"
+
+
+
+
 import { FaRegCircleCheck } from "react-icons/fa6";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -39,10 +50,7 @@ const About = () => {
           Our Main Goal to Satisfied <br /> Local & Global Clients
         </p>
         <p className=" w-full text-sm md:text-base font-light text-gray-300 md:w-2/3 mx-auto text-center">
-          At Vdigtech, we understand that your online presence is more than just
-          code and graphics; it's the digital heartbeat of your brand. That's
-          why we specialize in creating custom web solutions tailored to your
-          unique needs.
+          We strive to deliver high-quality solutions that meet the unique needs of each client, building lasting relationships through trust, innovation, and excellence.
         </p>
 
         <div className="mt-10">
@@ -100,7 +108,7 @@ const About = () => {
           className="w-full md:w-1/2 flex gap-6 justify-center">
             <div className="flex flex-col   gap-4 ">
               {
-            [image1,image2,image3].map((image,index)=>(
+            [ourBussines1,whyChooseUs1,whoWeAre1].map((image,index)=>(
               <div key={index} >
                   <img src={image} alt="" className="rounded-lg w-[304px] h-[171px] object-cover shadow" />
               </div>
@@ -109,7 +117,7 @@ const About = () => {
           </div>
            <div className="flex flex-col  gap-4 mt-12">
               {
-            [image4,image5,image6].map((image,index)=>(
+            [ourBussines2,whyChooseUs2,whoWeAre2].map((image,index)=>(
               <div key={index} >
                   <img src={image} alt="" className="rounded-lg w-[304px] h-[171px] object-cover shadow" />
               </div>
