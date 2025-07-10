@@ -2237,7 +2237,7 @@ export const testimonialsData3 = [
     email: "priyamehta.dev@gmail.com",
     image: memoji5,
     review:
-      "Branding Hunks exceeded our expectations with his professionalism and coding skills. The UI he delivered was polished, fast, and pixel-perfect.",
+      "Branding Hunks exceeded our expectations with his professionalism and coding skills. The UI he delivered was polished, fast, and ",
   },
   {
     id: 12,
