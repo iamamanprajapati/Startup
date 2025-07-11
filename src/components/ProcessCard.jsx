@@ -38,7 +38,7 @@ const ProcessCard = ({data}) => {
                     {
                         data.images.map((image,index)=>(
                             <div className='flex' key={index}>
-                            <img src={image} alt=""  className='w-[304px] h-[171px] rounded-xl shadow-2xl'/>
+                            <img src={image} alt=""  className='w-[304px] h-[190px] rounded-xl shadow-2xl'/>
                             </div>
                         ))
                     }

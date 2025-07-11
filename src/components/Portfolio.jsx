@@ -4,7 +4,7 @@ import ProtfolioCard from "./ProtfolioCard.jsx";
 import { motion } from "framer-motion";
 
 const Portfolio = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All Projects");
+  const [selectedCategory, setSelectedCategory] = useState("Webiste");
   return (
     <div className="bg-primary py-12">
       <div className="max-w-7xl mx-auto  sm:py-7 px-6 text-white">
@@ -36,7 +36,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="grid gap-4 place-items-center  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-4 place-items-center  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {protfolioData
             .filter((data) =>
               selectedCategory === "All Projects"

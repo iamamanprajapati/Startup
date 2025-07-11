@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios"
 import { toast } from "react-toastify";
+import { countryCodeWithFlag, servicesData } from "../assets/data";
 
 const ContactForm = () => {
 
@@ -100,9 +101,11 @@ const ContactForm = () => {
             className="w-full p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm"
             >
                 <option value="">Select a service</option>
-                <option value="Website Development">Website Development</option>
-                <option value="App Development">App Development</option>
-                <option value="Content Creation">Content Creation</option>
+                {
+                  servicesData.map((service)=>(
+                    <option value={service.title} key={service.id}>{service.title}</option>
+                  ))
+                }
             </select>
         </div>
 
@@ -134,11 +137,11 @@ const ContactForm = () => {
             className="w-full p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm"
             >
                 <option value="">Select your country</option>
-                <option value="India">India</option>
-                <option value="Dubai">Dubai</option>
-                <option value="USA">USA</option>
-                <option value="Canada">Canada</option>
-                <option value="England">England</option>
+                {
+                  countryCodeWithFlag.map((country)=>(
+                  <option value={country.name} key={country.name}>{country.flag} {country.code} {","} {country.name}  </option>
+                  ))
+                }
             </select>
         </div>
         <div className="w-full mt-12 ">
