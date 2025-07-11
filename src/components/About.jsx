@@ -3,13 +3,6 @@ import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import globalteam from "../assets/globaltem.svg";
 import { FaStar } from "react-icons/fa";
-import image1 from "../assets/image1.jpeg";
-import image2 from "../assets/image2.jpeg";
-import image3 from "../assets/image3.jpeg";
-import image4 from "../assets/image4.jpeg";
-import image5 from "../assets/image5.jpeg";
-import image6 from "../assets/image6.jpeg";
-
 import  ourBussines1 from  "../assets/aboutUs/ourBussines1.png"
 import  ourBussines2 from  "../assets/aboutUs/ourBussines2.png"
 import  whyChooseUs1 from  "../assets/aboutUs/whyChooseUs1.png"
@@ -110,7 +103,7 @@ const About = () => {
               {
             [ourBussines1,whyChooseUs1,whoWeAre1].map((image,index)=>(
               <div key={index} >
-                  <img src={image} alt="" className="rounded-lg w-[304px] h-[171px] object-cover shadow" />
+                  <img src={image} alt="" className="rounded-lg w-full h-full object-fit shadow" />
               </div>
             ))
           }
@@ -119,7 +112,7 @@ const About = () => {
               {
             [ourBussines2,whyChooseUs2,whoWeAre2].map((image,index)=>(
               <div key={index} >
-                  <img src={image} alt="" className="rounded-lg w-[304px] h-[171px] object-cover shadow" />
+                  <img src={image} alt="" className="rounded-lg w-full h-full object-fit shadow" />
               </div>
             ))
           }
