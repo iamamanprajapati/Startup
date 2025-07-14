@@ -1,4 +1,3 @@
-import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import globalteam from "../assets/globaltem.svg";
