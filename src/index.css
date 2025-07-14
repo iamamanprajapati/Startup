@@ -14,7 +14,6 @@ html {
 }
 
 @theme{
-  /* --color-primary: #111828;  172030*/ 
   --color-primary: #111828;
   --color-secondary: #172030;
   --color-button:#ff8804;

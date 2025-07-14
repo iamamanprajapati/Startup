@@ -50,20 +50,20 @@ const ServiceCard = ({ card }) => {
           <p className="text-xs  px-6 text-gray-200 ">{card.description}</p>
         </div>
         <div className="mt-8">
-        {card.listItem.map((item, index) => (
-          <div
-            key={index}
-            className="px-6 mt-4 gap-x-3 flex justify-between items-center"
-          >
-            <div>
-              <p className="text-sm text-gray-200">{item.title}</p>
-              <p className="text-xs text-gray-400">{item.about}</p>
+          {card.listItem.map((item, index) => (
+            <div
+              key={index}
+              className="px-6 mt-4 gap-x-3 flex justify-between items-center"
+            >
+              <div>
+                <p className="text-sm text-gray-200">{item.title}</p>
+                <p className="text-xs text-gray-400">{item.about}</p>
+              </div>
+              <div className="bg-secondary/70 w-8 h-8 flex items-center justify-center border-[1px] border-gray-600/50 rounded-md">
+                <GoArrowRight />
+              </div>
             </div>
-            <div className="bg-secondary/70 w-8 h-8 flex items-center justify-center border-[1px] border-gray-600/50 rounded-md">
-              <GoArrowRight />
-            </div>
-          </div>
-        ))}
+          ))}
         </div>
       </div>
     </motion.div>
