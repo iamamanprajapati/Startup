@@ -1,16 +1,3 @@
-import image1 from "./image1.jpeg"
-import image2 from "./image2.jpeg"
-import image3 from "./image3.jpeg"
-import image4 from "./image4.jpeg"
-import image5 from "./image5.jpeg"
-import image6 from "./image6.jpeg"
-import image7 from "./image7.jpeg"
-import image8 from "./image8.jpeg"
-import image9 from "./image9.jpeg"
-import image10 from "./image10.jpeg"
-import image11 from "./image11.jpeg"
-import image12 from "./image12.jpeg"
-
 import website from "./startup/webdev.png"
 import appDev from "./startup/app-dev.png"
 import webMaintenace from "./startup/maintenance.png"
@@ -29,8 +16,6 @@ import memoji2 from "./testimonial/memoji2.png"
 import memoji3 from "./testimonial/memoji3.png"
 import memoji4 from "./testimonial/memoji4.png"
 import memoji5 from "./testimonial/memoji5.png"
-
-import python from "./python.png"
 
 import web1 from "./portfolio/web1.png"
 import web2 from "./portfolio/web2.png"
@@ -54,13 +39,23 @@ import addShoting4 from "./portfolio/addShoting4.png"
 import fashion1 from "./portfolio/fashion1.png"
 import fashion2 from "./portfolio/fashion2.png"
 
+// process images 
+import discover from "../assets/process/discover.png"
+import consultant from "../assets/process/consultant.png"
+import startegy from "../assets/process/startegy.png"
+import planning from "../assets/process/planning.png"
+import development from "../assets/process/development.png"
+import production from "../assets/process/production.png"
+import support from "../assets/process/support.png"
+import maintenance from "../assets/process/Maintenance.png"
+
+
 export const servicesDataDevelopment = [
     {
         id:1,
         title:"Website Development",
         description:"From design to deployment, we build fast, responsive, and scalable websites tailored to grow your business in the digital world.",
         icon:website,
-        image:website,
         listItem:[
             {
                 title:"User-Focused Design",
@@ -81,7 +76,6 @@ export const servicesDataDevelopment = [
         title:"App Development",
         description:"We craft high-performance mobile apps tailored to your business—designed for usability, speed, and scalability across iOS and Android platforms.",
         icon:appDev,
-        image:appDev,
         listItem:[
             {
                 title:"User-Centered UX",
@@ -102,7 +96,6 @@ export const servicesDataDevelopment = [
         title:"Website Maintenance",
         description:"We ensure your website stays secure, up-to-date, and optimized—so you can focus on growing your business while we handle the tech.",
         icon:webMaintenace,
-        image:webMaintenace,
         listItem:[
             {
                 title:"Regular Updates",
@@ -123,7 +116,6 @@ export const servicesDataDevelopment = [
         title:"AI/ML",
         description:"We build intelligent AI and machine learning solutions that help automate processes, uncover insights, and drive smarter business decisions.",
         icon:AiMl2,
-        image:AiMl2,
         listItem:[
             {
                 title:"Data-Driven Models",
@@ -144,7 +136,6 @@ export const servicesDataDevelopment = [
         title:"Cross-Platform App Development",
          description:"We develop high-quality apps using a single codebase for iOS and Android—saving time, reducing cost, and ensuring a consistent user experience.",
         icon:crossPlatform,
-        image:crossPlatform,
         listItem:[
             {
                 title:"Single Codebase",
@@ -165,7 +156,6 @@ export const servicesDataDevelopment = [
         title:"Website SEO",
          description:"We optimize your website to rank higher, load faster, and reach the right audience—boosting visibility, traffic, and conversions.",
         icon:seo,
-        image:seo,
         listItem:[
             {
                 title:"On-Page Optimization",
@@ -190,7 +180,6 @@ export const mediaData = [
         title:"Digital Marketing",
         description:"We create data-driven digital campaigns that increase visibility, drive engagement, and deliver measurable results across all major online platforms.",
         icon:digital,
-        image:digital,
         listItem:[
             {
                 title:"Targeted Campaigns",
@@ -211,7 +200,6 @@ export const mediaData = [
         title:"Content Creation",
          description:"We craft compelling, high-quality content that tells your brand story, engages your audience, and drives conversions across digital platforms.",
         icon:contentcreation,
-        image:contentcreation,
         listItem:[
             {
                 title:"Engaging Copy",
@@ -230,9 +218,8 @@ export const mediaData = [
     {
         id:3,
         title:"Video Editing",
-         description:"We turn raw footage into captivating videos that tell your story, enhance your brand, and engage your audience across all platforms.",
+        description:"We turn raw footage into captivating videos that tell your story, enhance your brand, and engage your audience across all platforms.",
         icon:videoediting,
-        image:image9,
         listItem:[
             {
                 title:"Creative Storytelling",
@@ -253,7 +240,6 @@ export const mediaData = [
         title:"Ads Marketing & Creation",
          description:"We design and manage high-performing ad campaigns that capture attention, drive traffic, and convert viewers into customers across digital platforms.",
         icon:ads,
-        image:image10,
         listItem:[
             {
                 title:"Creative Ad Design",
@@ -274,7 +260,6 @@ export const mediaData = [
         title:"Podcast Shooting & Editing",
          description:"We help bring your voice to life with professional podcast recording and editing—delivering high-quality audio content that connects with your audience.",
         icon:podcast,
-        image:image11,
         listItem:[
             {
                 title:"Studio-Quality Recording",
@@ -295,7 +280,6 @@ export const mediaData = [
         title:"Social Media Management",
          description:"We manage your social media presence end-to-end—creating content, growing your audience, and keeping your brand active and engaging across all platforms.",
         icon:contentmanagement,
-        image:image12,
         listItem:[
             {
                 title:"Content Planning",
@@ -334,7 +318,7 @@ export const  processData = [
             title:"Define project scope and vision."
         },
         ],
-        images:[image1,image2]
+        images:[discover,consultant]
     },
 
      {
@@ -355,7 +339,7 @@ export const  processData = [
             title:"Set measurable objectives (KPIs, milestones)."
         },
         ],
-        images:[image4,image5]
+        images:[startegy,planning]
     },
 
      {
@@ -376,7 +360,7 @@ export const  processData = [
             title:"Regular client updates."
         },
         ],
-        images:[image3,image6]
+        images:[development,production]
     },
 
      {
@@ -397,16 +381,12 @@ export const  processData = [
             title:"Long-term partnerships."
         },
         ],
-        images:[image7,image8]
+        images:[support,maintenance]
     }
 
 ]
 
 export const categories = [
-    {
-        id:1,
-        title:"All Projects"
-    },
     {
         id:2,
         title:"Webiste"
@@ -427,6 +407,10 @@ export const categories = [
         id:6,
         title:"Podcast"
     },
+    {
+        id:1,
+        title:"All Projects"
+    },
 ]
 
 
@@ -434,157 +418,100 @@ export const protfolioData = [
     {
         id:1,
         category:"Webiste",
-        title:"Learnify websiet",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:web1,
     },
     {
         id:2,
         category:"Webiste",
-        title:"Learnify websiet 2",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:web2,
 
     },
     {
         id:3,
         category:"Webiste",
-        title:"Learnify websiet 3",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:web3,
 
     },
     {
         id:4,
         category:"Webiste",
-        title:"Learnify websiet 4",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:web4,
 
     },
     {
         id:40,
         category:"Webiste",
-        title:"Learnify websiet 4",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:web5,
 
     },
     {
         id:5,
         category:"Mobile App",
-        title:"Learnify Mobile 1",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:app1,
     },
     {
         id:6,
         category:"Mobile App",
-        title:"Learnify Mobile 2",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:app2,
     },
     {
         id:7,
         category:"Mobile App",
-        title:"Learnify Mobile 3",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:app3,
     },
     {
         id:8,
         category:"Mobile App",
-        title:"Learnify Mobile 4",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:app4,
     },
     {
         id:9,
         category:"Add Shooting",
-        title:"Video Editing with experts 1",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:addShoting1,
     },
     {
         id:10,
         category:"Add Shooting",
-        title:"Video Editing with experts 2",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:addShoting2,
     },
     {
         id:11,
         category:"Add Shooting",
-        title:"Video Editing with experts 3",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:addShoting3,
     },
     {
         id:12,
         category:"Add Shooting",
-        title:"Video Editing with experts 4",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:addShoting4,
     },
     {
         id:13,
         category:"Podcast",
-        title:"Thumbnails Editing with experts 1",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:podcast1,
     },
     {
         id:14,
         category:"Podcast",
-        title:"Thumbnails Editing with experts 2",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:podcast2,
     },
     {
         id:15,
         category:"Podcast",
-        title:"Thumbnails Editing with experts 3",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:podcast3,
     },
     {
         id:16,
         category:"Podcast",
-        title:"Thumbnails Editing with experts 4",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:podcast4,
     },
     {
         id:17,
         category:"Fashion",
-        title:"Thumbnails Editing with experts 4",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:fashion1,
     },
     {
         id:18,
         category:"Fashion",
-        title:"Thumbnails Editing with experts 4",
-        description:"This website about a edtech paltform where student comes and learn accroding to there needs.",
-        icon:python,
         image:fashion2,
     },
 ]
@@ -592,11 +519,12 @@ export const protfolioData = [
 export const footerData= [
     {
         title:"Quick Links",
-        items:['Home','About','Services','Testimonials','Contact']
+        items:['Home','About','Services','Process','Contact'],
+        href:["home",'about,services','process','contact']
     },
     {
         title:"Our Services",
-        items:['Website Development','Mobile App Development','Video Editing','Thumbnails'],
+        items:['Website Development','App Development','Website Maintenance','AI/ML','Cross-Platform App Development','Website SEO','Digital Marketing','Content Creation','Video Editing','Ads Marketing & Creation','Podcast Shooting & Editing','Social Media Management'],
     },
     {
         title:"Get In Touch",
@@ -2152,14 +2080,14 @@ export const testimonialsData1 = [
   {
     id:1,
     name:"Radhika Manna",
-    email:"radhikamanna@gmail.com",
+    email:"radhikamanna993@gmail.com",
     image:memoji4,
     review:"Working with Branding Hunks was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
   },
   {
     id:2,
     name:"Amit Grover",
-    email:"amingrover542@gmail.com",
+    email:"raghavgrover542@gmail.com",
     image:memoji3,
     review:"Working with Branding Hunks was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
   },
@@ -2193,7 +2121,7 @@ export const testimonialsData2 = [
     email: "sneha.kapoor97@gmail.com",
     image: memoji1,
     review:
-      "Branding Hunks’s attention to detail and problem-solving mindset made a huge difference in our project. He delivered a clean, fast, and fully responsive site ahead of schedule.",
+      "Branding Hunks attention to detail and problem-solving mindset made a huge difference in our project. He delivered a clean, fast, and fully responsive site ahead of schedule.",
   },
   {
     id: 7,

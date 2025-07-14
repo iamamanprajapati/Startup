@@ -2,27 +2,23 @@ import React, { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-import {servicesDataDevelopment,mediaData} from "../assets/data"
+import { servicesDataDevelopment, mediaData } from "../assets/data";
 import ServiceCard from "./ServiceCard";
 
 const Services = () => {
+  const [developmentData, setDevelopmentData] = useState([]);
+  const [media, setMediaData] = useState([]);
 
+  const [tab, setTab] = useState("Development");
 
-    const [developmentData,setDevelopmentData] = useState([]);
-    const[media,setMediaData] = useState([]);
+  const fetchData = async () => {
+    setMediaData(mediaData);
+    setDevelopmentData(servicesDataDevelopment);
+  };
 
-    const [tab,setTab] = useState("Development");
-
-    const fetchData = async()=>
-    {
-        setMediaData(mediaData);
-        setDevelopmentData(servicesDataDevelopment);
-    }
-
-    useEffect(()=>{ 
-        fetchData();
-    },[tab])
-
+  useEffect(() => {
+    fetchData();
+  }, [tab]);
 
   return (
     <div className="bg-primary py-12">
@@ -54,43 +50,53 @@ const Services = () => {
 
         <div className="flex transition-all duration-300 gap-x-6 bg-secondary w-fit py-2 px-3 rounded-full text-sm my-16">
           <button
-          onClick={()=>setTab("Development")}
-          className={`transition-all duration-300 ${tab === "Development" ? "bg-colortext py-1 px-3 rounded-full" : "py-1 px-3 rounded-full"}`}>Development</button>
-          <button 
-            onClick={()=>setTab("Media")}
-          className={`transition-all duration-300 ${tab === "Media" ? "bg-colortext py-1 px-3 rounded-full" : "py-1 px-3 rounded-full"}`}>Media</button>
+            onClick={() => setTab("Development")}
+            className={`transition-all duration-300 ${
+              tab === "Development"
+                ? "bg-colortext py-1 px-3 rounded-full"
+                : "py-1 px-3 rounded-full"
+            }`}
+          >
+            Development
+          </button>
+          <button
+            onClick={() => setTab("Media")}
+            className={`transition-all duration-300 ${
+              tab === "Media"
+                ? "bg-colortext py-1 px-3 rounded-full"
+                : "py-1 px-3 rounded-full"
+            }`}
+          >
+            Media
+          </button>
         </div>
 
         <div className="grid px-2 transition-all duration-200 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10">
-            {
-                tab === "Development" && developmentData.map((item,index)=>(
-                  <motion.div
-                  key={item.id}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, ease: "easeOut" }}
-                    >
-                   <ServiceCard  card={item}/>
-                   </motion.div>
-                ))
-            }
+          {tab === "Development" &&
+            developmentData.map((item, index) => (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+              >
+                <ServiceCard card={item} />
+              </motion.div>
+            ))}
 
-            {
-             tab === "Media" && media.map((item,index)=>(
-                     <motion.div
-                  key={item.id}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, ease: "easeOut" }}
-                    >
-                    <ServiceCard  card={item}/>
-                  </motion.div>
-                )) 
-              }
+          {tab === "Media" &&
+            media.map((item, index) => (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+              >
+                <ServiceCard card={item} />
+              </motion.div>
+            ))}
         </div>
-
       </div>
-
     </div>
   );
 };

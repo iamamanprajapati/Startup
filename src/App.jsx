@@ -7,8 +7,7 @@ import Proccess from "./components/Proccess"
 import Services from "./components/Services"
 import Testimonials from "./components/Testimonials"
 import Footer from "./components/Footer"
-
-  import { ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import { Route, Routes } from "react-router-dom"
 import Dashboard from "./admin/Dashboard"
 

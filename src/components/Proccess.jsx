@@ -5,15 +5,15 @@ import { processData } from "../assets/data";
 import ProcessCard from "./ProcessCard";
 
 const Proccess = () => {
-  const [data,setData] = useState([]);
+  const [data, setData] = useState([]);
 
-  const fetchProcessData = ()=>{
+  const fetchProcessData = () => {
     setData(processData);
-  }
+  };
 
-  useEffect(()=>{
+  useEffect(() => {
     fetchProcessData();
-  },[])
+  }, []);
   return (
     <div className="bg-primary py-12">
       <div className="max-w-7xl mx-auto  sm:py-7 px-6 text-white">
@@ -41,15 +41,11 @@ const Proccess = () => {
 
         {/* process card */}
         <div className="flex flex-col gap-12 mt-16">
-        {
-            data.map((item,index)=>(
-                <ProcessCard key={item.id} data={item}/>
-            ))
-        }
+          {data.map((item, index) => (
+            <ProcessCard key={item.id} data={item} />
+          ))}
         </div>
-
       </div>
-
     </div>
   );
 };
