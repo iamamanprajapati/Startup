@@ -47,7 +47,7 @@ const QueryCard = ({ data, onDelete }) => {
 
   return (
     <div
-      className={`  relative bg-secondary/50 hover:scale-102 transition-all duration-200 cursor-pointer hover:bg-secondary/70 w-full min-h-[300px] p-6 rounded-3xl shadow-3xl flex flex-col gap-1`}
+      className={` overflow-hidden overflow-y-auto  relative bg-secondary/50 hover:scale-102 transition-all  duration-200 cursor-pointer hover:bg-secondary/70 w-full  p-6 rounded-3xl shadow-3xl flex flex-col gap-1  h-[300px] text-gray-300`}
     >
       <div
         onClick={handleDeleteQuery}
