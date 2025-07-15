@@ -1,152 +1,176 @@
-import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { countryCodeWithFlag, servicesData } from "../assets/data";
+import { IoIosArrowDown } from "react-icons/io";
+
+// Zod schema
+const contactSchema = z.object({
+  name: z.string().min(3, "Name is required"),
+  email: z.string().email("Invalid email"),
+  phoneNumber: z
+    .string()
+    .min(10, "Phone number must be at least 10 digits")
+    .max(12, "Phone number must be at most 12 digits"),
+  service: z.string().min(1, "Please select a service"),
+  about: z.string().min(10, "Please tell us something about your project"),
+  country: z.string().min(1, "Please select a country"),
+});
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [service, setService] = useState("");
-  const [about, setAbout] = useState("");
-  const [country, setCountry] = useState("");
-  const [loading, setLloading] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm({
+    resolver: zodResolver(contactSchema),
+  });
 
-  const formData = { name, email, phoneNumber, service, about, country };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLloading(true);
+  const onSubmit = async (data) => {
     try {
-      const respose = await axios.post(
+      const response = await axios.post(
         `${import.meta.env.VITE_SERVER_BASE_URL}/add-contact`,
-        formData
+        data
       );
-      if (!respose.data.success) {
-        console.log(respose.data.message);
-        console.log("unable to submit the form");
+      if (!response.data.success) {
         toast.error("Submission failed");
+        return;
       }
-      toast.success("Query submited successfully.");
+      toast.success("Query submitted successfully.");
+      reset();
     } catch (error) {
       toast.error(error.message);
-    } finally {
-      setName("");
-      setEmail("");
-      setAbout("");
-      setService("");
-      setCountry("");
-      setPhoneNumber("");
-      setLloading(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div>
         <p className="text-2xl font-semibold text-gray-300">
-          Tell Us What You Nedd
+          Tell Us What You Need
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-8 mt-12">
+
+      {/* Name & Email */}
+      <div className="flex flex-col sm:flex-row justify-between gap-4 md:gap-8 mt-12">
         <div className="flex flex-col w-full">
-          <label htmlFor="name" className="text-xs text-gray-600">
-            Your Name/Company Name <span className="text-red-400">*</span>{" "}
+          <label className="text-xs text-gray-600">
+            Your Name/Company Name <span className="text-red-400">*</span>
           </label>
           <input
-            type="text"
+            {...register("name")}
             placeholder="Enter your name"
-            required
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-            className="w-full p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm"
+            className="w-full p-2 bg-gray-300/10 border border-gray-700 rounded-md mt-2 text-gray-400 text-sm"
           />
+          {errors.name && <span className="text-red-400 text-xs">{errors.name.message}</span>}
         </div>
+
         <div className="flex flex-col w-full">
-          <label htmlFor="email" className="text-xs text-gray-600">
-            Your Email <span className="text-red-400">*</span>{" "}
+          <label className="text-xs text-gray-600">
+            Your Email <span className="text-red-400">*</span>
           </label>
           <input
-            type="email"
+            {...register("email")}
             placeholder="Enter your email"
-            required
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            className="w-full p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm "
+            className="w-full p-2 bg-gray-300/10 border border-gray-700 rounded-md mt-2 text-gray-400 text-sm"
           />
+          {errors.email && <span className="text-red-400 text-xs">{errors.email.message}</span>}
         </div>
       </div>
 
+      {/* Phone */}
       <div className="flex flex-col w-full mt-4">
-        <label htmlFor="email" className="text-xs text-gray-600">
-          Phone Number <span className="text-red-400">*</span>{" "}
+        <label className="text-xs text-gray-600">
+          Phone Number <span className="text-red-400">*</span>
         </label>
         <input
-          type="text"
-          placeholder="Enter Phone Number"
-          required
-          onChange={(e) => setPhoneNumber(e.target.value)}
-          value={phoneNumber}
-          className="w-full p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm "
+          {...register("phoneNumber")}
+          placeholder="Enter phone number"
+          className="w-full p-2 bg-gray-300/10 border border-gray-700 rounded-md mt-2 text-gray-400 text-sm"
         />
+        {errors.phoneNumber && (
+          <span className="text-red-400 text-xs">{errors.phoneNumber.message}</span>
+        )}
       </div>
 
+      {/* Service */}
       <div className="flex flex-col w-full mt-4">
-        <label htmlFor="name" className="text-xs text-gray-600">
-          I Need <span className="text-red-400">*</span>{" "}
+        <label className="text-xs text-gray-600">
+          I Need <span className="text-red-400">*</span>
         </label>
-        <select
-          required
-          onChange={(e) => setService(e.target.value)}
-          value={service}
-          className="w-full p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm"
-        >
-          <option value="">Select a service</option>
-          {servicesData.map((service) => (
-            <option value={service.title} key={service.id}>
-              {service.title}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            {...register("service")}
+            className="w-full p-2 bg-gray-300/10 border border-gray-700 rounded-md mt-2 text-gray-400 text-sm"
+          >
+            <option value="">Select a service</option>
+            {servicesData.map((s) => (
+              <option key={s.id} value={s.title}>
+                {s.title}
+              </option>
+            ))}
+          </select>
+          <div className="absolute top-1/2 right-4 -translate-y-1/4">
+            <IoIosArrowDown className="text-gray-400" />
+          </div>
+        </div>
+        {errors.service && (
+          <span className="text-red-400 text-xs">{errors.service.message}</span>
+        )}
       </div>
 
+      {/* About */}
       <div className="flex flex-col w-full mt-4">
-        <label htmlFor="email" className="text-xs text-gray-600">
-          About Your Project <span className="text-red-400">*</span>{" "}
+        <label className="text-xs text-gray-600">
+          About Your Project <span className="text-red-400">*</span>
         </label>
         <textarea
-          type="text"
-          placeholder="Tell us about your project, goals, and any specific requirements."
-          required
-          onChange={(e) => setAbout(e.target.value)}
-          value={about}
-          className="w-full h-[150px] p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm "
+          {...register("about")}
+          placeholder="Tell us about your project"
+          className="w-full h-[150px] p-2 bg-gray-300/10 border border-gray-700 rounded-md mt-2 text-gray-400 text-sm"
         />
+        {errors.about && (
+          <span className="text-red-400 text-xs">{errors.about.message}</span>
+        )}
       </div>
 
-      <div className="flex flex-col w-full mt-4">
-        <label htmlFor="name" className="text-xs text-gray-600">
-          Country <span className="text-red-400">*</span>{" "}
+      {/* Country */}
+      <div className="flex flex-col w-full mt-4 relative">
+        <label className="text-xs text-gray-600">
+          Country <span className="text-red-400">*</span>
         </label>
-        <select
-          required
-          onChange={(e) => setCountry(e.target.value)}
-          value={country}
-          className="w-full p-2 outline-none border-gray-700 bg-gray-300/10 border-[1px] rounded-md mt-2 text-gray-400 text-sm"
-        >
-          <option value="">Select your country</option>
-          {countryCodeWithFlag.map((country) => (
-            <option value={country.name} key={country.name}>
-              {country.flag} {country.code} {","} {country.name}{" "}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            {...register("country")}
+            className="w-full p-2 bg-gray-300/10 border border-gray-700 rounded-md mt-2 text-gray-400 text-sm"
+          >
+            <option value="">Select your country</option>
+            {countryCodeWithFlag.map((c) => (
+              <option key={c.name} value={c.name}>
+                {c.flag} {c.code}, {c.name}
+              </option>
+            ))}
+          </select>
+          <div className="absolute top-1/2 right-4 -translate-y-1/4">
+            <IoIosArrowDown className="text-gray-400" />
+          </div>
+        </div>
+        {errors.country && (
+          <span className="text-red-400 text-xs">{errors.country.message}</span>
+        )}
       </div>
-      <div className="w-full mt-12 ">
+
+      {/* Submit */}
+      <div className="w-full mt-12">
         <button
-          disabled={loading}
-          className="white bg-colortext hover:bg-colortext/50 transition-all duration-200 rounded-md w-full p-4 font-semibold cursor-pointer"
+          type="submit"
+          disabled={isSubmitting}
+          className="white bg-colortext hover:bg-colortext/50 transition-all duration-200 rounded-md w-full p-2 font-semibold cursor-pointer"
         >
-          {loading ? "Please Wait..." : "Send My Request"}
+          {isSubmitting ? "Please Wait..." : "Send My Request"}
         </button>
       </div>
     </form>
@@ -154,3 +178,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
