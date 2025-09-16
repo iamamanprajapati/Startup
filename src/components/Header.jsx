@@ -1,6 +1,6 @@
 import React from "react";
 import headerImage from "../assets/headerImage.svg";
-import home_banner from "../assets/main.jpeg";
+import home_banner from "../assets/main.png";
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -8,25 +8,25 @@ const Header = () => {
     <div className="w-full  bg-primary">
       <div className="relative max-w-7xl mx-auto  py-3 sm:py-7 px-6 text-white flex flex-col md:flex-row gap-8 justify-between md:items-center">
         <h1 className="z-10 uppercase text-5xl sm:text-7xl leading-14 sm:leading-18 md:text-[100px] lg:text-[125px] font-bold md:leading-30">
-          best
+        BEST
           <motion.div
             initial={{ x: -400, opacity: 0 }} // Start from left and hidden
             animate={{ x: 0, opacity: 1 }} // Animate to original position
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="outline-text"
           >
-            website
+            VIDEO
           </motion.div>
-          development
+          PRODUCTION
           <motion.div
             initial={{ x: 400, opacity: 0 }} // Start from left and hidden
             animate={{ x: 0, opacity: 1 }} // Animate to original position
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="outline-text "
           >
-            & Content
+            & EDITING
           </motion.div>
-          Creation
+          SERVICES
         </h1>
         <div className="flex md:absolute  right-0 z-1 max-w-[400px]">
           <img src={headerImage} alt="Design image" />

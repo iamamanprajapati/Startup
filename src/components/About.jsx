@@ -34,12 +34,14 @@ const About = () => {
           <h3 className="text-colortext text-sm md:text-xl">About Company</h3>
         </div>
         <p className="text-3xl md:text-5xl text-center py-3 font-semibold leading-[1.2]">
-          Our Main Goal to Satisfied <br /> Local & Global Clients
+          Our Main Goal is to Deliver Creative Video Production <br /> & Editing Solutions to Local & Global
+          Clients
         </p>
         <p className=" w-full text-sm md:text-base font-light text-gray-300 md:w-2/3 mx-auto text-center">
-          We strive to deliver high-quality solutions that meet the unique needs
-          of each client, building lasting relationships through trust,
-          innovation, and excellence.
+          At Branding Hunks, we strive to produce high-quality video content that tells powerful
+          stories, engages audiences, and builds impactful connections. Our mission is to help
+          businesses, brands, and creators communicate their vision through compelling visuals,
+          seamless editing, and innovative production techniques.
         </p>
 
         <div className="mt-10">
@@ -66,19 +68,20 @@ const About = () => {
             <div className="bg-secondary shadow-lg rounded-lg p-6">
               <h3 className="text-2xl font-semibold">Our Mission</h3>
               <p className="text-sm text-gray-400 mt-3">
-                Our mission is to deliver innovative digital solutions through
-                expert social media marketing, app development, and software
-                services that empower businesses to grow, engage customers, and
-                achieve success.
+                Our mission is to empower businesses and individuals by creating engaging video content
+                that captures attention, drives emotions, and inspires action. From corporate films and
+                commercials to social media videos, event highlights, and brand stories — we ensure every
+                frame delivers value.
               </p>
             </div>
 
             <div className="bg-secondary shadow-lg rounded-lg p-6">
               <h3 className="text-2xl font-semibold mb-4">Why Choose Us</h3>
               {[
-                "Expert Team – Skilled professionals in marketing and development.",
-                "Custom Solutions – Tailored strategies for your business needs.",
-                "Proven Results – Track record of delivering success and growth.",
+                "Creative Experts – A passionate team of filmmakers, editors, and storytellers.",
+                "Tailored Content – Customized video solutions to match your brand identity and goals.",
+                "High-Quality Output – Advanced editing tools, cinematic visuals, and professional finishing.",
+                "Proven Success – Trusted by clients across industries for impactful video campaigns."
               ].map((item, index) => (
                 <div
                   key={index}
@@ -92,10 +95,10 @@ const About = () => {
             <div className="bg-secondary shadow-lg rounded-lg p-6">
               <h3 className="text-2xl font-semibold">Who we are</h3>
               <p className="text-sm text-gray-400 mt-3">
-                We are a passionate team of creatives and developers dedicated
-                to delivering impactful digital solutions, blending strategy,
-                technology, and innovation to help businesses grow and succeed
-                online.
+                We are a team of creative professionals driven by the art of storytelling through video. At
+                Branding Hunks, we blend creativity with technology to deliver visually stunning and
+                emotionally engaging videos. Whether you need promotional videos, ads, YouTube content,
+                reels, or full-scale production, we bring your ideas to life with perfection and passion.
               </p>
             </div>
           </motion.div>

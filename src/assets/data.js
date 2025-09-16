@@ -177,121 +177,121 @@ export const servicesDataDevelopment = [
 export const mediaData = [
     {
         id:1,
-        title:"Digital Marketing",
-        description:"We create data-driven digital campaigns that increase visibility, drive engagement, and deliver measurable results across all major online platforms.",
+        title:"Video Production",
+        description:"From concept to final cut, we produce high-quality videos that capture attention and deliver impact.",
         icon:digital,
         listItem:[
             {
-                title:"Targeted Campaigns",
-                about:"Reach the right audience at the right time."
+                title:"Creative Storyboarding",
+                about:"Unique ideas tailored to your brand’s vision."
             },
             {
-                title:"Multi-Channel Strategy",
-                 about:"Unified presence across web, search, and social."
+                title:"Professional Filming",
+                 about:"High-end cameras, lighting, and cinematic techniques."
             },
             {
-                title:"Performance Analytics",
-                 about:"Track ROI with real-time insights."
+                title:"Brand-Centric Content",
+                 about:"Videos that speak directly to your target audience."
             },
         ]
     },
     {
         id:2,
-        title:"Content Creation",
-         description:"We craft compelling, high-quality content that tells your brand story, engages your audience, and drives conversions across digital platforms.",
+        title:"Video Editing",
+         description:"Transform your raw footage into polished, engaging content that resonates with viewers.",
         icon:contentcreation,
         listItem:[
             {
-                title:"Engaging Copy",
-                 about:"Clear, persuasive messaging that connects."
+                title:"Seamless Transitions",
+                 about:"Smooth, professional cuts for a refined finish."
             },
             {
-                title:"Visual Content",
-                 about:"Graphics and videos that capture attention."
+                title:"Color Grading & Effects",
+                 about:"Enhance mood, tone, and visual appeal."
             },
             {
-                title:"Platform Ready",
-                 about:"Optimized for web, social, and campaigns."
+                title:"Sound Design & Mixing",
+                 about:"Crisp audio, background scores, and effects."
             },
         ]
     },
     {
         id:3,
-        title:"Video Editing",
-        description:"We turn raw footage into captivating videos that tell your story, enhance your brand, and engage your audience across all platforms.",
+        title:"Social Media Content Creation",
+        description:"Create scroll-stopping content designed specifically for social platforms",
         icon:videoediting,
         listItem:[
             {
-                title:"Creative Storytelling",
-                 about:"Crafted narratives that leave a lasting impact."
+                title:"Short-Form Videos/Reels",
+                 about:"Engaging edits for Instagram, TikTok, YouTube Shorts."
             },
             {
-                title:"High-Quality Edits",
-                 about:"Smooth transitions, effects, and sound design."
+                title:"Platform-Specific Optimization",
+                 about:"Formats and styles tailored for each channel."
             },
             {
-                title:"Platform Optimized",
-                 about:"Tailored formats for social, web, and ads."
+                title:"High Engagement Strategies",
+                 about:"Content that drives likes, shares, and conversions."
             },
         ]
     },
     {
         id:4,
-        title:"Ads Marketing & Creation",
-         description:"We design and manage high-performing ad campaigns that capture attention, drive traffic, and convert viewers into customers across digital platforms.",
+        title:"Corporate & Brand Films",
+         description:"Tell your brand’s story with compelling narratives and premium-quality visuals.",
         icon:ads,
         listItem:[
             {
-                title:"Creative Ad Design",
-                 about:"Visually impactful and message-driven creatives."
+                title:"Company Profile Videos",
+                 about:"Showcase your values, culture, and achievements."
             },
             {
-                title:"Targeted Campaigns",
-                 about:"Reach the right audience with precision."
+                title:"Product Videos",
+                 about:" Highlight features and benefits in a creative way."
             },
             {
-                title:"Performance Tracking",
-                 about:"Optimize results with data-driven insights."
+                title:"Client Testimonials",
+                 about:"Build trust with authentic customer stories."
             },
         ]
     },
     {
         id:5,
-        title:"Podcast Shooting & Editing",
-         description:"We help bring your voice to life with professional podcast recording and editing—delivering high-quality audio content that connects with your audience.",
+        title:" Motion Graphics & Animation",
+         description:"Bring your ideas to life with modern visual effects and graphics.",
         icon:podcast,
         listItem:[
             {
-                title:"Studio-Quality Recording",
-                 about:"Clear sound with pro-level equipment."
+                title:"Explainer Videos",
+                 about:"Simplify complex concepts with engaging animations."
             },
             {
-                title:"Clean Audio Edits",
-                 about:"Noise reduction, mixing, and mastering."
+                title:"Logo Animations",
+                 about:"Dynamic intros & outros for branding."
             },
             {
-                title:"Engaging Delivery",
-                 about:"Polished episodes ready for all platforms."
+                title:"Infographics",
+                 about:"Visually stunning data and process representations."
             },
         ]
     },
     {
         id:6,
-        title:"Social Media Management",
-         description:"We manage your social media presence end-to-end—creating content, growing your audience, and keeping your brand active and engaging across all platforms.",
+        title:"Marketing & Ad Films",
+         description:"Boost your campaigns with performance-driven video ads.",
         icon:contentmanagement,
         listItem:[
             {
-                title:"Content Planning",
-                 about:"Strategic posts that reflect your brand."
+                title:"Commercial Ads",
+                 about:"Creative storytelling that sells"
             },
             {
-                title:"Community Engagement",
-                 about:"Build trust and connect with followers."
+                title:"YouTube & Digital Ads",
+                 about:"Optimized for conversions and visibility."
             },
             {
-                title:"Analytics & Growth",
-                 about:"Track performance and grow organically. "
+                title:"Campaign Video Strategy",
+                 about:"Videos aligned with your marketing goals."
             },
         ]
     }
@@ -303,19 +303,19 @@ export const  processData = [
     {
         id:1,
         title:"Discovery & Consultation",
-        description:"We begin with a deep discovery and consultation phase where we thoroughly understand your brand's goals, challenges, and vision. Our team conducts detailed market research and competitor analysis (if applicable) to define a clear project scope. By analyzing your current content and identifying growth opportunities, we ensure that every step aligns with your business objectives.",
+        description:"We begin by understanding your brand’s vision, audience, and goals. Through collaborative discussions, we identify the right video style, tone, and messaging to align with your objectives.",
         listItems:[
         {
             id:1,
-            title:"Understand client goals, needs, and challenges."
+            title:"Identify brand goals and target audience"
         },
         {
             id:2,
-            title:"Market research, competitor analysis (if applicable)."
+            title:"Understand content needs and platforms"
         },
         {
             id:3,
-            title:"Define project scope and vision."
+            title:"Define project vision and creative direction"
         },
         ],
         images:[discover,consultant]
@@ -324,19 +324,19 @@ export const  processData = [
      {
         id:2,
         title:"Strategy & Planning",
-        description:"In this phase, we craft a clear roadmap tailored to your brand goals. Our team carefully selects the most effective technologies, media platforms, and marketing channels to maximize impact. We also define measurable KPIs and milestones to ensure strategic alignment and track progress effectively.",
+        description:"Every great video starts with a strong plan. Our team develops a detailed roadmap, covering scriptwriting, storyboarding, shooting style, and platform-specific strategies to maximize engagement.",
         listItems:[
         {
             id:1,
-            title:"Develop roadmap/timeline."
+            title:"Scriptwriting & creative storytelling"
         },
         {
             id:2,
-            title:"Choose the right tech stack, media platforms, or marketing channels."
+            title:"Storyboarding & visual planning"
         },
         {
             id:3,
-            title:"Set measurable objectives (KPIs, milestones)."
+            title:"Distribution & platform strategy"
         },
         ],
         images:[startegy,planning]
@@ -344,20 +344,20 @@ export const  processData = [
 
      {
         id:3,
-        title:"Development / Production",
-        description:"In the development phase, we execute the plan through structured sprints and module-based workflows. For software projects, we follow agile practices to ensure rapid and flexible delivery. For media production, our team handles everything from scriptwriting and filming to post-production. Throughout the process, we provide regular updates to keep you fully aligned and informed.",
+        title:"Production",
+        description:"This is where ideas come to life. Our expert team handles everything from filming to directing, using professional equipment and cinematic techniques to capture stunning visuals and powerful stories.",
         listItems:[
         {
             id:1,
-            title:"Software: Agile sprints, module-based development."
+            title:"On-location or studio shoots"
         },
         {
             id:2,
-            title:"Media: Scriptwriting, filming, content creation, post-production."
+            title:"Professional lighting, audio, and cinematography"
         },
         {
             id:3,
-            title:"Regular client updates."
+            title:"Creative direction for brand consistency"
         },
         ],
         images:[development,production]
@@ -365,47 +365,63 @@ export const  processData = [
 
      {
         id:4,
-        title:"Support & Maintenance",
-        description:"After deployment, we ensure your project runs smoothly with continuous support and maintenance. From fixing bugs and monitoring performance to updating content and reviewing analytics, we keep everything optimized. Our goal is to build long-term partnerships and help your brand grow sustainably.",
+        title:"Post-Production (Editing)",
+        description:"In this stage, we refine raw footage into polished, impactful content. With advanced editing, effects, and sound design, we ensure every frame contributes to your story.",
         listItems:[
         {
             id:1,
-            title:"Bug fixes, performance monitoring."
+            title:"Video editing & seamless transitions"
         },
         {
             id:2,
-            title:"Content updates, analytics review."
+            title:"Color grading & visual effects"
         },
         {
             id:3,
-            title:"Long-term partnerships."
+            title:"Sound design, background music, and voiceovers"
         },
         ],
         images:[support,maintenance]
-    }
+    },
+    {
+      id:5,
+      title:" Delivery & Support",
+      description:"Once finalized, your videos are delivered in optimized formats for all platforms. We also provide continuous support for future edits, repurposing, and campaign-based modifications.",
+      listItems:[
+      {
+          id:1,
+          title:"Multi-platform delivery (YouTube, Instagram, LinkedIn, etc.)"
+      },
+      {
+          id:2,
+          title:"Ongoing edits & repurposing support"
+      },
+      {
+          id:3,
+          title:"Long-term partnerships for consistent content creation"
+      },
+      ],
+      images:[support,maintenance]
+  }
 
 ]
 
 export const categories = [
     {
         id:2,
-        title:"Webiste"
+        title:"Corporate Films"
     },
     {
         id:3,
-        title:"Mobile App"
+        title:"Event Coverage"
     },
     {
         id:4,
-        title:"Add Shooting"
+        title:"Social Media Videos"
     },
     {
         id:5,
-        title:"Fashion"
-    },
-    {
-        id:6,
-        title:"Podcast"
+        title:"Podcast Production"
     },
     {
         id:1,
@@ -416,102 +432,53 @@ export const categories = [
 
 export const protfolioData = [
     {
-        id:1,
-        category:"Webiste",
-        image:web1,
-    },
-    {
-        id:2,
-        category:"Webiste",
-        image:web2,
-
-    },
-    {
-        id:3,
-        category:"Webiste",
-        image:web3,
-
-    },
-    {
-        id:4,
-        category:"Webiste",
-        image:web4,
-
-    },
-    {
-        id:40,
-        category:"Webiste",
-        image:web5,
-
-    },
-    {
-        id:5,
-        category:"Mobile App",
-        image:app1,
-    },
-    {
-        id:6,
-        category:"Mobile App",
-        image:app2,
-    },
-    {
-        id:7,
-        category:"Mobile App",
-        image:app3,
-    },
-    {
-        id:8,
-        category:"Mobile App",
-        image:app4,
-    },
-    {
         id:9,
-        category:"Add Shooting",
+        category:"Corporate Films",
         image:addShoting1,
     },
     {
         id:10,
-        category:"Add Shooting",
+        category:"Corporate Films",
         image:addShoting2,
     },
     {
         id:11,
-        category:"Add Shooting",
+        category:"Corporate Films",
         image:addShoting3,
     },
     {
         id:12,
-        category:"Add Shooting",
+        category:"Corporate Films",
         image:addShoting4,
     },
     {
         id:13,
-        category:"Podcast",
+        category:"Podcast Production",
         image:podcast1,
     },
     {
         id:14,
-        category:"Podcast",
+        category:"Podcast Production",
         image:podcast2,
     },
     {
         id:15,
-        category:"Podcast",
+        category:"Podcast Production",
         image:podcast3,
     },
     {
         id:16,
-        category:"Podcast",
+        category:"Podcast Production",
         image:podcast4,
     },
     {
         id:17,
-        category:"Fashion",
+        category:"Social Media Videos",
         image:fashion1,
     },
     {
         id:18,
-        category:"Fashion",
+        category:"Social Media Videos",
         image:fashion2,
     },
 ]
@@ -2079,38 +2046,45 @@ export const countryCodeWithFlag = [
 export const testimonialsData1 = [
   {
     id:1,
-    name:"Radhika Manna",
-    email:"radhikamanna993@gmail.com",
+    name:"Naveen Patnaik",
+    email:"naveen5467@gmail.com",
     image:memoji4,
-    review:"Working with Branding Hunks was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    review:"Working with Branding Hunks was a seamless experience. Their team captured our corporate event with such professionalism and creativity. The final video highlighted every important moment and exceeded our expectations.",
   },
   {
     id:2,
-    name:"Amit Grover",
-    email:"raghavgrover542@gmail.com",
+    name:"Ishita Jain",
+    email:"ishitajain2301@gmail.com",
     image:memoji3,
-    review:"Working with Branding Hunks was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    review:"Branding Hunks turned our brand story into a stunning visual experience. Their attention to detail, cinematic style, and ability to bring emotions alive on screen truly impressed us. The film helped us connect deeply with our audience.",
   },
   {
     id:3,
-    name:"Naveen Patnaik",
-    email:"naveen5467@gmail.com",
+    name:"Sneha Kapoor",
+    email:"sneha.kapoor87@gmail.com",
     image:memoji2,
-    review:"I would like to thank you and extend my appreciation wishes as you bid farewell. You have been a treasured employee of the company. Thank you for bringing your best to work every single day. Farewell to one great employee. Your hard work and dedication were an important part of our team.",
+    review:"From concept to execution, Branding Hunks handled our promotional video flawlessly. They delivered a crisp, engaging, and high-quality edit that worked wonders on social media. The turnaround time was amazing too!",
   },
   {
     id:4,
-    name:"Radhika Manna",
-    email:"radhikamanna@gmail.com",
+    name:"Ritik Malhotra",
+    email:"ritik.codes@gmail.com",
     image:memoji1,
-    review:"Working with Branding Hunks was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    review:"The creativity Branding Hunks brought to our product video was outstanding. They transformed simple ideas into a compelling story with perfect editing, sound design, and visuals. The video drove excellent engagement for our campaign.",
   },
   {
     id:5,
     name:"Radhika Manna",
     email:"radhikamanna@gmail.com",
     image:memoji5,
-    review:"Working with Branding Hunks was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    review:"Branding Hunks made our podcast visually engaging by producing video episodes with smooth editing and dynamic visuals. Their professional approach and storytelling helped us grow our audience faster than we expected.",
+  },
+  {
+    id:6,
+    name:"Neha Sinha",
+    email:"nehadesigns99@gmail.com",
+    image:memoji5,
+    review:"We hired Branding Hunks for a fashion shoot and behind-the-scenes video. The cinematic shots and editing quality were absolutely top-notch. They captured the vibe perfectly and delivered a final product that elevated our brand presence.",
   },
 ]
 
@@ -2160,44 +2134,46 @@ export const testimonialsData2 = [
 
 export const testimonialsData3 = [
   {
-    id: 11,
-    name: "Priya Mehta",
-    email: "priyamehta.dev@gmail.com",
-    image: memoji5,
-    review:
-      "Branding Hunks exceeded our expectations with his professionalism and coding skills. The UI he delivered was polished, fast, and ",
+    id:1,
+    name:"Naveen Patnaik",
+    email:"naveen5467@gmail.com",
+    image:memoji4,
+    review:"Working with Branding Hunks was a seamless experience. Their team captured our corporate event with such professionalism and creativity. The final video highlighted every important moment and exceeded our expectations.",
   },
   {
-    id: 12,
-    name: "Harshil Patel",
-    email: "harshil.patel28@gmail.com",
-    image: memoji4,
-    review:
-      "We hired Branding Hunks for a critical frontend revamp, and he nailed it. His React.js expertise brought clarity, performance, and elegance to our app.",
+    id:2,
+    name:"Ishita Jain",
+    email:"ishitajain2301@gmail.com",
+    image:memoji3,
+    review:"Branding Hunks turned our brand story into a stunning visual experience. Their attention to detail, cinematic style, and ability to bring emotions alive on screen truly impressed us. The film helped us connect deeply with our audience.",
   },
   {
-    id: 13,
-    name: "Sana Qureshi",
-    email: "sana.q@gmail.com",
-    image: memoji3,
-    review:
-      "It was a smooth experience working with Branding Hunks. He was responsive, understood requirements quickly, and delivered exactly what we needed — with extra polish!",
+    id:3,
+    name:"Sneha Kapoor",
+    email:"sneha.kapoor87@gmail.com",
+    image:memoji2,
+    review:"From concept to execution, Branding Hunks handled our promotional video flawlessly. They delivered a crisp, engaging, and high-quality edit that worked wonders on social media. The turnaround time was amazing too!",
   },
   {
-    id: 14,
-    name: "Ritik Malhotra",
-    email: "ritikm.codes@gmail.com",
-    image: memoji2,
-    review:
-      "Branding Hunks brings creativity and clarity to frontend development. The custom components he built for our dashboard were reusable, responsive, and perfectly functional.",
+    id:4,
+    name:"Ritik Malhotra",
+    email:"ritik.codes@gmail.com",
+    image:memoji1,
+    review:"The creativity Branding Hunks brought to our product video was outstanding. They transformed simple ideas into a compelling story with perfect editing, sound design, and visuals. The video drove excellent engagement for our campaign.",
   },
   {
-    id: 15,
-    name: "Neha Sinha",
-    email: "nehadesigns99@gmail.com",
-    image: memoji1,
-    review:
-      "From design to deployment, Branding Hunks handled everything with grace. His work helped us launch a professional web presence in record time!",
+    id:5,
+    name:"Radhika Manna",
+    email:"radhikamanna@gmail.com",
+    image:memoji5,
+    review:"Branding Hunks made our podcast visually engaging by producing video episodes with smooth editing and dynamic visuals. Their professional approach and storytelling helped us grow our audience faster than we expected.",
   },
-];
+  {
+    id:6,
+    name:"Neha Sinha",
+    email:"nehadesigns99@gmail.com",
+    image:memoji5,
+    review:"We hired Branding Hunks for a fashion shoot and behind-the-scenes video. The cinematic shots and editing quality were absolutely top-notch. They captured the vibe perfectly and delivered a final product that elevated our brand presence.",
+  },
+]
 

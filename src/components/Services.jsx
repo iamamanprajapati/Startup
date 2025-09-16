@@ -40,32 +40,22 @@ const Services = () => {
             Our Services
           </p>
           <p className="text-gray-300 text-center mx-auto mt-4 w-full md:w-1/2">
-            Comprehensive Website Services to Ignite Your Online Success.
-            Empower Your Business with Powerful Online Services from our
-            Website.
+            Comprehensive Video Production & Editing Services to Elevate Your Brand.
+            Empower your business with powerful storytelling, stunning visuals, and engaging content
+            crafted by Branding Hunks.
           </p>
         </div>
 
         {/* cards sections  */}
 
         <div className="flex transition-all duration-300 gap-x-6 bg-secondary w-fit py-2 px-3 rounded-full text-sm my-16">
+          
           <button
             onClick={() => setTab("Development")}
-            className={`transition-all duration-300 ${
-              tab === "Development"
+            className={`transition-all duration-300 ${tab === "Development"
                 ? "bg-colortext py-1 px-3 rounded-full"
                 : "py-1 px-3 rounded-full"
-            }`}
-          >
-            Development
-          </button>
-          <button
-            onClick={() => setTab("Media")}
-            className={`transition-all duration-300 ${
-              tab === "Media"
-                ? "bg-colortext py-1 px-3 rounded-full"
-                : "py-1 px-3 rounded-full"
-            }`}
+              }`}
           >
             Media
           </button>
@@ -73,18 +63,6 @@ const Services = () => {
 
         <div className="grid px-2 transition-all duration-200 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10">
           {tab === "Development" &&
-            developmentData.map((item, index) => (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
-              >
-                <ServiceCard card={item} />
-              </motion.div>
-            ))}
-
-          {tab === "Media" &&
             media.map((item, index) => (
               <motion.div
                 key={item.id}

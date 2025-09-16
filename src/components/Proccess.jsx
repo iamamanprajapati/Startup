@@ -33,9 +33,9 @@ const Proccess = () => {
             Our Process
           </p>
           <p className="text-gray-300 text-center mx-auto mt-4 w-full md:w-1/2">
-            Comprehensive Website Services to Ignite Your Online Success.
-            Empower Your Business with Powerful Online Services from our
-            Website.
+            Comprehensive Video Production & Editing Services to Tell Stories That Inspire.
+            At Branding Hunks, we follow a structured creative process to ensure every project delivers
+            maximum impact and resonates with your audience.
           </p>
         </div>
 
