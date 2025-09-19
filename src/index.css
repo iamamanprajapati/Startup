@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar{
+  display:none;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+@theme{
+  --color-primary: #111828;
+  --color-secondary: #172030;
+  --color-button:#ff8804;
+  --color-colortext:#ff8804;
+}
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px #ff8804; /* outline with white color */
+}
+.outline-text-gray {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(109, 106, 106); /* outline with white color */
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up 20s linear infinite;
+}
+.animate-scroll-down {
+  animation: scroll-down 25s linear infinite;
+}
+.animate-scroll-slow {
+  animation: scroll-up 35s linear infinite;
+}
+
+
+.spinner {
+   width: 56px;
+   height: 56px;
+   display: grid;
+   animation: spinner-plncf9 4s infinite;
+}
+
+.spinner::before,
+.spinner::after {
+   content: "";
+   grid-area: 1/1;
+   border: 9px solid;
+   border-radius: 50%;
+   border-color: #474bff #474bff #0000 #0000;
+   mix-blend-mode: darken;
+   animation: spinner-plncf9 1s infinite linear;
+}
+
+.spinner::after {
+   border-color: #0000 #0000 #dbdcef #dbdcef;
+   animation-direction: reverse;
+}
+
+@keyframes spinner-plncf9 {
+   100% {
+      transform: rotate(1turn);
+   }
+}
